@@ -1,3 +1,5 @@
+@font-face { font-family: 'Gafata--Regular'; src: url('/static/fonts/Gafata-Regular.ttf'); }
+
 body, html {
 	touch-action: none;
 	content-zooming: none;
@@ -35,4 +37,9 @@ canvas {
 
 .App-intro {
   font-size: large;
+}
+
+h1, h4, h5, p {
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
 }

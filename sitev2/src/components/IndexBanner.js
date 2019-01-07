@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import NavigationBar from './Marquee';
 import '../styles/IndexBanner.css';
 
 export default class IndexBanner extends PureComponent {
@@ -620,7 +621,7 @@ export default class IndexBanner extends PureComponent {
   		}
   		pointer.rotate(0.001, 0.95);
   		// rotate world matrix
-  		newRotationMatrix.identity().rotateY(pointer.cx + 0.003).rotateX(pointer.cy);
+  		newRotationMatrix.identity().rotateY(pointer.cx + 0.001).rotateX(pointer.cy);
   		rotationMatrix.multiply(newRotationMatrix, rotationMatrix);
   		camera.view
   			.fromTranslation(0, 0, -2.5)
@@ -659,7 +660,9 @@ export default class IndexBanner extends PureComponent {
 
   render() {
     return (
-      <div id="index-banner"></div>
+      <div id="index-banner">
+        <NavigationBar/>
+      </div>
     );
   }
 
