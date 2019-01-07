@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import NavigationBar from './Marquee';
+import Marquee from './Marquee';
 import '../styles/IndexBanner.css';
 
 export default class IndexBanner extends PureComponent {
@@ -661,7 +661,7 @@ export default class IndexBanner extends PureComponent {
   render() {
     return (
       <div id="index-banner">
-        <NavigationBar/>
+        <Marquee/>
       </div>
     );
   }

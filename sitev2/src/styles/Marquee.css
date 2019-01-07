@@ -1,13 +1,29 @@
 .marquee {
-  position: absolute;
+  display: flex;
   width: 100%;
+  margin-top: 168px;
+}
+
+.marquee .row {
+  display: flex;
 }
 
 .marquee h1 {
-  position: absolute;
   font-family: 'Gafata--Regular';
   font-size: 46px;
   margin: 0 0 0 0;
   color: white;
   line-height: 64px;
+}
+
+.marquee p {
+  font-family: 'Gafata--Regular';
+  font-size: 24px;
+  line-height: 40px;
+  color: white;
+  margin-top: 72px;
+}
+
+.marquee .main-content {
+
 }
