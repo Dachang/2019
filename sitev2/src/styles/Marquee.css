@@ -1,0 +1,13 @@
+.marquee {
+  position: absolute;
+  width: 100%;
+}
+
+.marquee h1 {
+  position: absolute;
+  font-family: 'Gafata--Regular';
+  font-size: 46px;
+  margin: 0 0 0 0;
+  color: white;
+  line-height: 64px;
+}
