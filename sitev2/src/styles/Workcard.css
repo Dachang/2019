@@ -1,0 +1,66 @@
+.cover {
+  object-fit: cover;
+}
+
+.work-card {
+  overflow: hidden;
+  position:relative;
+}
+
+.work-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.work-card h4 {
+  font-family: 'Gafata--Regular';
+  font-size: 38px;
+  margin: 0 0 0 0;
+  color: white;
+  line-height: 44px;
+}
+
+.work-card .card-info {
+  display: flex;
+  position: absolute;
+  bottom: 60px;
+}
+
+.work-card p {
+  font-family: 'Gafata--Regular';
+  font-size: 24px;
+  line-height: 40px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.work-card a {
+  font-family: 'Gafata--Regular';
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFF500;
+}
+
+.work-tag {
+  display: inline-block;
+  border-radius: 90px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  margin-right: 20px;
+}
+
+.work-tag.design {
+  border-color: #FFF500;
+  background-color: rgba(255, 245, 0, 0.25);
+}
+
+.work-tag.dev {
+  border-color: #FF00C7;
+  background-color: rgba(255, 0, 199, 0.25);
+}
+
+.work-tag p {
+  margin: 0 16px 0 16px;
+}

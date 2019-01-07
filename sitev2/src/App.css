@@ -8,11 +8,10 @@ body, html {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	background-color: black;
 }
 
 canvas {
-	position: absolute;
 	width: 100%;
 	height: 100%;
 	background:#000;
@@ -37,6 +36,11 @@ canvas {
 
 .App-intro {
   font-size: large;
+}
+
+.latest-work {
+	display: flex;
+	margin-top: 108px;
 }
 
 h1, h4, h5, p {

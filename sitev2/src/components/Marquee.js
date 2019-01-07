@@ -6,10 +6,10 @@ export default class Marquee extends PureComponent {
   render() {
     return (
       <div className="marquee row">
-        <div className="two columns"></div>
-        <div className="main-content eight columns">
+        <div className="one column"></div>
+        <div className="main-content ten columns">
           <div className="row">
-            <div className="nine columns">
+            <div className="seven columns">
               <h1>
                 Hi, I’m Dachang,<br></br>a digital experience designer & developer
                 based in Beijing, China.
@@ -20,10 +20,10 @@ export default class Marquee extends PureComponent {
                 <br></br>Now working as an experience designer at Airbnb China.
               </p>
             </div>
-            <div className="three columns"></div>
+            <div className="five columns"></div>
           </div>
         </div>
-        <div className="two columns"></div>
+        <div className="one column"></div>
       </div>
     );
   }

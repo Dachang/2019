@@ -1,14 +1,15 @@
 #index-banner {
   width: 100%;
-  height: 100%;
+  height: 80vh;
 }
 
 #index-banner canvas {
-  position: absolute;
+  /* position: absolute; */
   z-index: 0;
 }
 
 #index-banner .marquee {
   position: absolute;
+  pointer-events: none;
   z-index: 1;
 }
