@@ -9,18 +9,18 @@ export default class Workcard extends PureComponent {
         <img
           className="cover"
           alt="museum of the bible interactive system"
-          src="/static/media/image/motb_workcard.jpg"
-          srcset="/static/media/image/motb_workcard@2x.jpg 2x"
+          src={this.props.imageSources + ".jpg"}
+          srcset={this.props.imageSources + "@2x.jpg 2x"}
         />
-      <div className="card-info row">
-        <div className="one column"></div>
-        <div className="eight columns">
-          <h4>Museum of the Bible Interactive System, 2017</h4>
-          <p>The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology.</p>
-          <a>Read more</a>
+        <div className="card-info row">
+          <div className="one column"></div>
+          <div className="eight columns">
+            <h4>{this.props.title}</h4>
+            <p>{this.props.description}</p>
+            <a>Read more</a>
+          </div>
+          <div className="three columns"></div>
         </div>
-        <div className="three columns"></div>
-      </div>
       </div>
     );
   }
