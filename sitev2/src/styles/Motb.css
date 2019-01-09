@@ -1,0 +1,6 @@
+.highlight-section {
+  display: flex;
+  position: relative;
+  margin-top: -260px;
+  z-index: 2;
+}
