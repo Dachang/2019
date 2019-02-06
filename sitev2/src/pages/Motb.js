@@ -12,7 +12,19 @@ export default class Motb extends PureComponent {
           imageSources="/static/media/image/motb_project_banner"
         />
         <div className="highlight-section row">
-          <VideoCard/>
+          <VideoCard
+            yOffset="-320"
+            imageSrc="/static/media/image/motb_highlight_gospel"
+            title="Gospels and spirituals"
+            description="An interactive showcased soundtracks from 24 artists, who performed six different gospels that inspried by the Bible. Soundtracks are sampled, parsed and visualized into waves, as spiritual lyrics highlighting on the side."
+          />
+        </div>
+        <div className="highlight-section row">
+          <VideoCard
+            imageSrc="/static/media/image/motb_highlight_bol"
+            title="Bible Out Loud"
+            description="An interactive recorded soundtracks that people read the Bible with minority languages from all over the world."
+          />
         </div>
       </div>
     );
