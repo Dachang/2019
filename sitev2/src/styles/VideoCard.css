@@ -7,6 +7,12 @@
   height: 100%;
 }
 
+.video-background {
+  position: absolute;
+  width: 94%;
+  margin: 2.26% 0 0 3.27%;
+}
+
 .play-button {
   display: flex;
   height: 24px;
@@ -17,6 +23,10 @@
   z-index: 2;
 }
 
+.play-button:hover {
+  cursor: pointer;
+}
+
 .play-button svg {
   display: block;
   margin: 0 8px 0 0;
@@ -24,7 +34,7 @@
 }
 
 .play-button p {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Text';
   font-size: 18px;
   margin: 0 0 0 0;
   color: #FFF500;

@@ -10,20 +10,33 @@ class Homepage extends PureComponent {
     return (
       <div className="App">
         <IndexBanner/>
-        <div className="latest-work first-row row">
+          <div className="latest-work first-row row">
+            <div className="one column"></div>
+            <div className="ten columns">
+              <Link to="/motb">
+                <Workcard
+                  imageSources="/static/media/image/abc_workcard"
+                  title="Airbnb China"
+                  description="Design owner of China guest search experience. (2018.4 - Present)"
+                />
+              </Link>
+            </div>
+            <div className="one column"></div>
+          </div>
+        <div className="latest-work second-row row">
           <div className="one column"></div>
           <div className="ten columns">
             <Link to="/motb">
               <Workcard
                 imageSources="/static/media/image/motb_workcard"
-                title="Museum of the Bible Interactive System, 2017"
-                description="The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology."
+                title="Museum of the Bible"
+                description="The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology. (2017.3 - 2018.3)"
               />
             </Link>
           </div>
           <div className="one column"></div>
         </div>
-        <div className="latest-work second-row row">
+        <div className="latest-work third-row row">
           <div className="one column"></div>
           <div className="ten columns">
             <div className="row">

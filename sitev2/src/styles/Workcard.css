@@ -13,21 +13,26 @@
 }
 
 .work-card h4 {
-  font-family: 'Gafata--Regular';
-  font-size: 38px;
+  font-family: 'SF Display';
+  font-size: 46px;
   margin: 0 0 0 0;
   color: white;
-  line-height: 44px;
+  line-height: 64px;
 }
 
 .work-card .card-info {
   display: flex;
+  width: 100%;
   position: absolute;
   bottom: 60px;
 }
 
+.first-row .work-card .card-info {
+  bottom: 220px;
+}
+
 .work-card p {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Text';
   font-size: 24px;
   line-height: 40px;
   color: white;
@@ -35,8 +40,12 @@
   margin-bottom: 40px;
 }
 
+.first-row .work-card p {
+  margin-right: 460px;
+}
+
 .work-card a {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Text';
   font-size: 24px;
   line-height: 40px;
   color: #FFF500;

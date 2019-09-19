@@ -9,7 +9,7 @@
 }
 
 .marquee h1 {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Display', "HelveticaNeue";
   font-size: 46px;
   margin: 0 0 0 0;
   color: white;
@@ -18,7 +18,7 @@
 }
 
 .marquee p {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Text';
   font-size: 24px;
   line-height: 40px;
   color: white;

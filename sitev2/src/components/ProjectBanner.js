@@ -11,7 +11,7 @@ export default class ProjectBanner extends PureComponent {
           className="cover"
           alt="museum of the bible interactive system"
           src={this.props.imageSources + ".jpg"}
-          srcset={this.props.imageSources + "@2x.jpg 2x"}
+          srcSet={this.props.imageSources + "@2x.jpg 2x"}
         />
         <div className="cover-dark-hover"></div>
         <div className="project-info row">
@@ -25,7 +25,7 @@ export default class ProjectBanner extends PureComponent {
                 <h1 className="project-info-header wow fadeIn">Museum of the Bible Interactive System</h1>
                 <p className="project-intro  wow fadeIn" data-wow-delay="0.2s">
                   The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology.<br/><br/>
-                  As the main interaction designer & developer of this project, I crafted 12 digital interactives from interaction / motion design, to live kiosk application with various design & tech stack.<br/><br/>
+                  As the main interaction designer & front-end developer of this project, I crafted 12 digital interactives from interaction / motion design, to live kiosk applications with node JS web stack (React JS / Angular JS / Webpack).<br/><br/>
                   The museum is open to public since November, 2017, check out the <a>official website</a>.
                 </p>
               </div>

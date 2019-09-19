@@ -15,9 +15,10 @@ export default class Marquee extends PureComponent {
                 based in Beijing, China.
               </h1>
               <p>
-                I build interactive experiences, digital products, services & more.
-                <br></br>Used to work as a creative developer at C&G Partners, New York.
-                <br></br>Now working as an experience designer at Airbnb China.
+                I'm an Experience Designer at Airbnb China.
+                <br></br>Previously, I was a creative developer at C&G Partners, New York.
+                <br></br>I build interactive experiences, digital products, services & more.
+                <br></br>Below are a few things I've designed / developed:
               </p>
             </div>
             <div className="five columns"></div>

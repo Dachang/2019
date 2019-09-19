@@ -26,7 +26,7 @@
 }
 
 .project-banner .project-info h1 {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Display';
   font-size: 46px;
   margin: 0 0 0 0;
   color: white;
@@ -35,7 +35,7 @@
 }
 
 .project-banner .project-info p {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Text';
   font-size: 24px;
   line-height: 30px;
   color: white;

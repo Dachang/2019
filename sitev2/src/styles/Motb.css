@@ -11,7 +11,7 @@
 }
 
 .highlight-info h4 {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Display';
   font-size: 38px;
   margin: 0 0 0 0;
   color: white;
@@ -19,7 +19,7 @@
 }
 
 .highlight-info p {
-  font-family: 'Gafata--Regular';
+  font-family: 'SF Text';
   font-size: 24px;
   line-height: 40px;
   color: white;

@@ -5,12 +5,12 @@ export default class Workcard extends PureComponent {
 
   render() {
     return (
-      <div className="work-card">
+      <div className="work-card wow fadeIn">
         <img
           className="cover"
           alt="museum of the bible interactive system"
           src={this.props.imageSources + ".jpg"}
-          srcset={this.props.imageSources + "@2x.jpg 2x"}
+          srcSet={this.props.imageSources + "@2x.jpg 2x"}
         />
         <div className="card-info row">
           <div className="one column"></div>

@@ -1,4 +1,14 @@
-@font-face { font-family: 'Gafata--Regular'; src: url('/static/fonts/Gafata-Regular.ttf'); }
+@font-face {
+  font-family: "SF Display";
+  font-weight: 900;
+  src: url("/static/fonts/SF-UI-Display-Black.otf");
+}
+
+@font-face {
+  font-family: "SF Text";
+  font-weight: 900;
+  src: url("/static/fonts/SF-UI-Text-Regular.otf");
+}
 
 body, html {
 	touch-action: none;
@@ -43,10 +53,6 @@ canvas {
 	margin-top: 12px;
 }
 
-.latest-work.first-row {
-	margin-top: 108px;
-}
-
 .latest-work .six.columns {
 	width: 49.5%;
 }
@@ -56,7 +62,6 @@ canvas {
 }
 
 h1, h4, h5, p {
-  user-select: none;
   -webkit-font-smoothing: antialiased;
 	pointer-events: none;
 }
