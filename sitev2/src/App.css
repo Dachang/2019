@@ -6,8 +6,14 @@
 
 @font-face {
   font-family: "SF Text";
-  font-weight: 900;
+  font-weight: 400;
   src: url("/static/fonts/SF-UI-Text-Regular.otf");
+}
+
+@font-face {
+  font-family: "SF Light";
+  font-weight: 200;
+  src: url("/static/fonts/SF-UI-Text-Light.otf");
 }
 
 body, html {

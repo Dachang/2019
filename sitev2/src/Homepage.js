@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import IndexBanner from './components/IndexBanner';
 import Workcard from './components/Workcard';
+import AboutMe from './components/AboutMe';
 import './App.css';
 import './skeleton.css';
 
@@ -10,19 +11,19 @@ class Homepage extends PureComponent {
     return (
       <div className="App">
         <IndexBanner/>
-          <div className="latest-work first-row row">
-            <div className="one column"></div>
-            <div className="ten columns">
-              <Link to="/airbnbchina">
-                <Workcard
-                  imageSources="/static/media/image/abc_workcard"
-                  title="Airbnb China"
-                  description="Design owner of China guest search experience. (2018.4 - Present)"
-                />
-              </Link>
-            </div>
-            <div className="one column"></div>
+        <div className="latest-work first-row row">
+          <div className="one column"></div>
+          <div className="ten columns">
+            <Link to="/airbnbchina">
+              <Workcard
+                imageSources="/static/media/image/abc_workcard"
+                title="Airbnb China"
+                description="Design owner of China guest search experience. (2018.4 - Present)"
+              />
+            </Link>
           </div>
+          <div className="one column"></div>
+        </div>
         <div className="latest-work second-row row">
           <div className="one column"></div>
           <div className="ten columns">
@@ -86,6 +87,7 @@ class Homepage extends PureComponent {
           </div>
           <div className="one column"></div>
         </div>
+        <AboutMe/>
       </div>
     );
   }
