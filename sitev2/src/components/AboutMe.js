@@ -203,8 +203,8 @@ export default class AboutMe extends PureComponent {
                   <div className="row wechat-code">
                     <img
                       alt="wechat"
-                      src="/static/media/image/wechat_code.jpg"
-                      srcSet="/static/media/image/wechat_code@2x.jpg 2x"
+                      src={process.env.PUBLIC_URL + "/static/media/image/wechat_code.jpg"}
+                      srcSet={process.env.PUBLIC_URL + "/static/media/image/wechat_code@2x.jpg 2x"}
                     />
                   </div>
                 </div>

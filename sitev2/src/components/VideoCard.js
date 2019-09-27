@@ -25,7 +25,7 @@ function VideoBackground(props) {
         muted
         draggable={false}>
         <source
-          src="/static/media/videos/NamesInteractive_01.mp4"
+          src={process.env.PUBLIC_URL + "/static/media/videos/NamesInteractive_01.mp4"}
           type="video/mp4">
         </source>
       </video>

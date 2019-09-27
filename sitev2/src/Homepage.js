@@ -15,7 +15,7 @@ class Homepage extends PureComponent {
           <div className="twelve columns">
             <Link to="/airbnbchina">
               <Workcard
-                imageSources="/static/media/image/abc_workcard"
+                imageSources={process.env.PUBLIC_URL + "/static/media/image/abc_workcard"}
                 title="Airbnb"
                 time="2018.4 - Present"
                 description="Design owner of China guest search experience."
@@ -28,7 +28,7 @@ class Homepage extends PureComponent {
           <div className="twelve columns">
             <Link to="/motb">
               <Workcard
-                imageSources="/static/media/image/motb_workcard"
+                imageSources={process.env.PUBLIC_URL + "/static/media/image/motb_workcard"}
                 title="MOTB"
                 time="2017.3 - 2018.3"
                 description="The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology."
@@ -42,7 +42,7 @@ class Homepage extends PureComponent {
               <div className="six columns left">
                 <Link to="/lbi">
                   <Workcard
-                    imageSources="/static/media/image/lbi_workcard"
+                    imageSources={process.env.PUBLIC_URL + "/static/media/image/lbi_workcard"}
                     title="1938Projekt"
                     time="2017.12 - 2018.2"
                     description="Silver award in the Graphis Design Annual 2019."
@@ -52,7 +52,7 @@ class Homepage extends PureComponent {
               <div className="six columns right">
                 <Link to="/figmeasure">
                   <Workcard
-                    imageSources="/static/media/image/fig_workcard"
+                    imageSources={process.env.PUBLIC_URL + "/static/media/image/fig_workcard"}
                     title="Figmeasure"
                     time="2019.8"
                     description="A plugin for figma, spec your design at ease."
@@ -68,7 +68,7 @@ class Homepage extends PureComponent {
               <div className="six columns left">
                 <Link to="/cdi-mobile">
                   <Workcard
-                    imageSources="/static/media/image/cdi_workcard"
+                    imageSources={process.env.PUBLIC_URL + "/static/media/image/cdi_workcard"}
                     title="CDI Mobile"
                     time="2016.6 - 2016.12"
                     description="Control your living space at a flash."
@@ -77,7 +77,7 @@ class Homepage extends PureComponent {
               </div>
               <div className="six columns right">
                 <Workcard
-                  imageSources="/static/media/image/early_workcard"
+                  imageSources={process.env.PUBLIC_URL + "/static/media/image/early_workcard"}
                   title="Earlier Work"
                   time="2013 - 2016"
                   description="Once upon a time, stuff that entertained."

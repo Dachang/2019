@@ -1,19 +1,19 @@
 @font-face {
   font-family: "SF Display";
   font-weight: 900;
-  src: url("/static/fonts/SF-UI-Display-Black.otf");
+  src: url("./fonts/SF-UI-Display-Black.otf");
 }
 
 @font-face {
   font-family: "SF Text";
   font-weight: 400;
-  src: url("/static/fonts/SF-UI-Text-Regular.otf");
+  src: url("./fonts/SF-UI-Text-Regular.otf");
 }
 
 @font-face {
   font-family: "SF Light";
   font-weight: 200;
-  src: url("/static/fonts/SF-UI-Text-Light.otf");
+  src: url("./fonts/SF-UI-Text-Light.otf");
 }
 
 body, html {
