@@ -1,7 +1,7 @@
 .marquee {
   display: flex;
   width: 100%;
-  margin-top: 168px;
+  margin-top: 140px;
 }
 
 .marquee .row {
@@ -10,10 +10,10 @@
 
 .marquee h1 {
   font-family: 'SF Display', "HelveticaNeue";
-  font-size: 46px;
+  font-size: 86px;
   margin: 0 0 0 0;
   color: white;
-  line-height: 64px;
+  line-height: 100px;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.75);
 }
 
@@ -24,8 +24,4 @@
   color: white;
   margin-top: 72px;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.75);
-}
-
-.marquee .main-content {
-
 }

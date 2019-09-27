@@ -55,7 +55,7 @@ export default class AboutMe extends PureComponent {
     	vec2 pos = centre - uv;
      	pos.y /= widthHeightRatio;
 
-     	float intensity = 1.6;
+     	float intensity = 1.8;
      	float radius = 0.01;
 
      	vec3 col = vec3(0.0);
@@ -187,11 +187,11 @@ export default class AboutMe extends PureComponent {
   render() {
     return (
       <div className="row">
-        <div className="about-me row">
+        <div className="about-me row wow fadeIn">
           <div className="one column"></div>
             <div className="main-content ten columns">
               <div className="row">
-                <div className="nine columns">
+                <div className="eleven columns">
                   <h1>
                     I am open to new possibilities,<br></br>and always ready to jump in to learn more.
                   </h1>
@@ -208,12 +208,12 @@ export default class AboutMe extends PureComponent {
                     />
                   </div>
                 </div>
-                <div className="three columns"></div>
+                <div className="one column"></div>
               </div>
             </div>
           <div className="one column"></div>
         </div>
-        <div className="footer row">
+        <div className="footer row wow fadeIn">
            <canvas id="footer-canvas"></canvas>
         </div>
       </div>

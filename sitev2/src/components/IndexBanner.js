@@ -661,6 +661,7 @@ export default class IndexBanner extends PureComponent {
   render() {
     return (
       <div id="index-banner">
+		<div className="dark-hover"></div>
         <Marquee/>
       </div>
     );

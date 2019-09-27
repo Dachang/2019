@@ -55,16 +55,17 @@ canvas {
 }
 
 .latest-work {
-	display: flex;
-	margin-top: 12px;
+  display: flex;
+  margin-top: -12px;
+  background-color: #000;
 }
 
 .latest-work .six.columns {
-	width: 49.5%;
+	width: 50%;
 }
 
 .latest-work .six.columns.right {
-	margin-left: 1%;
+	margin-left: 0;
 }
 
 h1, h4, h5, p {

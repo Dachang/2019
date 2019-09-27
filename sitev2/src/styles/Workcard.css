@@ -14,21 +14,45 @@
 
 .work-card h4 {
   font-family: 'SF Display';
-  font-size: 46px;
+  font-size: 84px;
   margin: 0 0 0 0;
   color: white;
-  line-height: 64px;
+  line-height: 100px;
 }
 
 .work-card .card-info {
   display: flex;
   width: 100%;
   position: absolute;
-  bottom: 60px;
+  bottom: 120px;
+  transform: translateY(0px);
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card-info.light h4 {
+  color: black;
+}
+
+.card-info.light p {
+  color: black;
+}
+
+.card-info.light a {
+  color: #E61E4D;
+}
+
+.work-card:hover .card-info {
+  transform: translateY(-10px);
 }
 
 .first-row .work-card .card-info {
-  bottom: 220px;
+  top: 280px;
+}
+
+.second-row .card-info {
+  margin-left: 880px;
+  bottom: 280px;
 }
 
 .work-card p {
@@ -40,12 +64,21 @@
   margin-bottom: 40px;
 }
 
-.first-row .work-card p {
-  margin-right: 460px;
+.work-card p.time-label {
+  color: rgba(255,255,255,0.5);
+  margin-top: 0px;
 }
 
-.third-row .work-card p {
-  margin-top: 0px;
+.card-info.light p.time-label {
+  color: #9f9f9f;
+}
+
+.first-row .work-card p {
+  margin-right: 700px;
+}
+
+.second-row .work-card p {
+  margin-right: 540px;
 }
 
 .work-card a {

@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import '../styles/ProjectBanner.css';
 
 export default class ProjectBanner extends PureComponent {
-
   render() {
     return (
       <div
@@ -22,12 +21,8 @@ export default class ProjectBanner extends PureComponent {
               className="row">
               <div
                 className="seven columns">
-                <h1 className="project-info-header wow fadeIn">Museum of the Bible</h1>
-                <p className="project-intro  wow fadeIn" data-wow-delay="0.2s">
-                  The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology.<br/><br/>
-                  As the main interaction designer & front-end developer of this project, I crafted 12 digital interactives from interaction / motion design, to live kiosk applications with node JS web stack (React JS / Angular JS / Webpack).<br/><br/>
-                  The museum is open to public since November, 2017, check out the <a>official website</a>.
-                </p>
+                <h1 className="project-info-header wow fadeIn">{this.props.title}</h1>
+                <p className="project-intro  wow fadeIn" data-wow-delay="0.2s" dangerouslySetInnerHTML={{ __html: this.props.description }}></p>
               </div>
             </div>
           </div>

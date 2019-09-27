@@ -26,21 +26,21 @@
 }
 
 .project-banner .project-info h1 {
-  font-family: 'SF Display';
+  font-family: 'SF Display', "HelveticaNeue";
+  font-weight: 900;
   font-size: 46px;
   margin: 0 0 0 0;
   color: white;
   line-height: 64px;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.75);
 }
 
 .project-banner .project-info p {
-  font-family: 'SF Text';
-  font-size: 24px;
-  line-height: 30px;
-  color: white;
+  font-family: 'SF Light', "HelveticaNeue";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ABABAB;
   margin-top: 30px;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.75);
 }
 
 .project-banner .project-info a {

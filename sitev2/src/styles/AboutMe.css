@@ -10,10 +10,10 @@
 
 .about-me h1 {
   font-family: 'SF Display', "HelveticaNeue";
-  font-size: 46px;
+  font-size: 86px;
   margin: 0 0 0 0;
   color: white;
-  line-height: 64px;
+  line-height: 100px;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.75);
 }
 
@@ -22,7 +22,7 @@
   font-size: 24px;
   line-height: 40px;
   color: white;
-  margin: 72px 0 120px 0;
+  margin: 40px 0 60px 0;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.75);
 }
 

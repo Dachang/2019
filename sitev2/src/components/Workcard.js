@@ -12,10 +12,11 @@ export default class Workcard extends PureComponent {
           src={this.props.imageSources + ".jpg"}
           srcSet={this.props.imageSources + "@2x.jpg 2x"}
         />
-        <div className="card-info row">
+        <div className={"card-info row " + this.props.cardTheme}>
           <div className="one column"></div>
           <div className="eight columns">
             <h4>{this.props.title}</h4>
+            <p className="time-label">{this.props.time}</p>
             <p>{this.props.description}</p>
             <a>Read more</a>
           </div>
