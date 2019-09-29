@@ -38,7 +38,7 @@
   color: black;
 }
 
-.card-info.light a {
+.card-info.light p.link-label {
   color: #E61E4D;
 }
 
@@ -60,13 +60,12 @@
   font-size: 24px;
   line-height: 40px;
   color: white;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 0 0 0 0;
 }
 
 .work-card p.time-label {
   color: rgba(255,255,255,0.5);
-  margin-top: 0px;
+  margin: 0 0 40px 0;
 }
 
 .card-info.light p.time-label {
@@ -81,7 +80,7 @@
   margin-right: 540px;
 }
 
-.work-card a {
+.work-card p.link-label {
   font-family: 'SF Light';
   font-size: 24px;
   line-height: 40px;

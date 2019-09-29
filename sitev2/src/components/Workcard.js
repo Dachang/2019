@@ -18,7 +18,7 @@ export default class Workcard extends PureComponent {
             <h4>{this.props.title}</h4>
             <p className="time-label">{this.props.time}</p>
             <p>{this.props.description}</p>
-            <a>Read more</a>
+            <p className="link-label">Read more</p>
           </div>
           <div className="three columns"></div>
         </div>

@@ -1,42 +1,113 @@
 .project-airbnb-china {
+  position: relative;
+  background-color: white;
+}
+
+.airbnb-banner-background {
   width: 100%;
   height: 100vh;
   background: linear-gradient(135deg, rgba(230, 30, 77, 1) 0%, rgba(215, 4, 127, 1) 100%);
   align-items: center;
   justify-content: center;
   display: flex;
-}
-
-.abc-banner {
   position: relative;
   z-index: 1;
 }
 
-.abc-banner .project-info h1 {
+.abc-banner {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: -500px;
+  z-index: 1;
+}
+
+.abc-banner.project-info h1 {
   font-family: 'SF Display';
-  font-size: 46px;
+  font-size: 108px;
   margin: 0 0 0 0;
+  line-height: 1.2;
   color: white;
-  line-height: 64px;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.75);
 }
 
-.abc-banner .project-info p {
-  font-family: 'SF Text';
-  font-size: 20px;
-  line-height: 36px;
-  color: #ABABAB;
-  margin-top: 30px;
+.abc-banner.project-info p {
+  font-family: 'SF Light';
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+  margin-top: 64px;
 }
 
-.abc-banner .project-info {
+.abc-banner.project-info {
   display: flex;
   position: absolute;
   z-index: 1;
-  top: 168px;
+  width: 100%;
+  text-align: center;
+}
+
+.abc-highlight {
+  display: flex;
+  position: relative;
+  background-color: white;
+  margin-bottom: 80px;
+}
+
+.abc-highlight.first {
+  margin-top: 120px;
+}
+
+.abc-highlight-cards h4 {
+  font-family: 'SF Display';
+  font-size: 32px;
+  margin: 16px 0 0 0;
+  line-height: 1.2;
+  color: #000;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.abc-highlight-cards img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.abc-highlight-cards .four.columns {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.abc-highlight-cards .four.columns.last {
+  margin-right: 0;
+}
+
+.dual .abc-highlight-cards .eight.columns {
+  width: 66%;
+}
+
+.dual .abc-highlight-cards .four.columns {
+  margin-left: 2%;
+  margin-right: 0;
+}
+
+.abc-video-card {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.abc-video-card  video {
+  position: absolute;
+  top: 8px;
+}
+
+.rightdual .abc-video-card  video {
+  top: 0;
 }
 
 #belo-animation {
+transform: scale(1.2) translateY(-160px);
 width: 90px;
 height: 96px;
 background: url(https://a0.muscache.com/airbnb/static/homepages/belo-animation-bcd6d9a933280e6f8d50991b6e623f69.png);
