@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import '../styles/Abc.css';
 import '../components/Footer'
 import Footer from '../components/Footer';
+import BackButton from '../components/BackButton';
 
 function AbcBanner(props) {
   return (
@@ -220,6 +221,7 @@ export default class ABC extends PureComponent {
   render() {
     return (
       <div className="project-airbnb-china">
+        <BackButton/>
         <div className="airbnb-banner-background wow fadeIn" data-wow-delay="0.2s">
           <div id="belo-animation" className="animate"></div>
         </div>

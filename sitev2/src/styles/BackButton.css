@@ -1,0 +1,18 @@
+.back-to-home-button {
+    background-color: none;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    top: 4rem;
+    left: 4rem;
+}
+
+.back-to-home-button .one.column {
+    transition: transform 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transition: transform 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.back-to-home-button .one.column:hover {
+    transform: translateX(-10px);
+}

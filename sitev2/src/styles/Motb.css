@@ -1,8 +1,11 @@
 .highlight-section {
   display: flex;
   position: relative;
-  margin-top: -260px;
   z-index: 2;
+}
+
+.highlight-section.first {
+  /* margin-top: -120px; */
 }
 
 .highlight-info {
@@ -19,10 +22,89 @@
 }
 
 .highlight-info p {
-  font-family: 'SF Light';
-  font-size: 20px;
-  line-height: 36px;
-  color: #ABABAB;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  font-family: 'SF Text';
+  font-size: 24px;
+  line-height: 40px;
+  color: white;
+  margin-top: 32px;
+}
+
+.motb-floorplan {
+  width: 100%;
+  margin-top: -120px;
+}
+
+.motb-floorplan-title {
+  display: flex;
+  width: 100%;
+}
+
+.motb-floorplan h1 {
+  font-family: 'SF Display', "HelveticaNeue";
+  font-weight: 900;
+  font-size: 108px;
+  margin: 0 0 40px 0;
+  color: white;
+  line-height: 1.2;
+}
+
+.motb-floorplan .kiosk-label {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+}
+
+.motb-floorplan p {
+  font-family: 'SF Text';
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  margin-left: 8px;
+}
+
+.motb-floorplan-bg {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.motb-floorplan-bg img {
+  width: 100%;
+}
+
+.motb-floorplan-bg img.foreground {
+  position: absolute;
+}
+
+.kiosk-label.gov {
+  background-color: #00FF66;
+}
+
+.kiosk-label.quiz {
+  background-color: #00FFD1;
+}
+
+.kiosk-label.lit {
+  background-color: #1CD2FA;
+}
+
+.kiosk-label.jsp {
+  background-color: #0047FF;
+}
+
+.kiosk-label.ps {
+  background-color: #9E00FF;
+}
+
+.kiosk-label.ias {
+  background-color: #FF00A8;
+}
+
+.four.columns.quiz {
+  margin-left: -40px;
+}
+
+.four.columns.lit, .four.columns.ias {
+  margin-left: -120px;
 }
