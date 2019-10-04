@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 import '../styles/Abc.css';
+import '../components/Footer'
+import Footer from '../components/Footer';
 
 function AbcBanner(props) {
   return (
@@ -79,7 +81,7 @@ function AbcFooter(props) {
       <div className="two columns"></div>
       <div className="eight columns">
         <h1 className="wow fadeIn">To Be Continued</h1>
-        <p className="project-intro  wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.35s">
+        <p className="project-intro  wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.35s">
          Content may be hidden due to non-disclosure agreements.<br/>
          For additional information, please reach out accordingly.
         </p>
@@ -94,7 +96,7 @@ function AbcHighlightsTri(props) {
     <div className={"abc-highlight row wow fadeIn " + props.rowCount} data-wow-delay="0.2s">
       <div className="two columns"></div>
       <div className="eight columns abc-highlight-cards">
-        <h1 className="project-info-header wow fadeIn">Product Design</h1>
+        <h1 className="project-info-header wow fadeIn">Product</h1>
         <div className=" row">
           <div className="four columns">
             <img
@@ -217,8 +219,8 @@ export default class ABC extends PureComponent {
 
   render() {
     return (
-      <div className="project-airbnb-china wow fadeIn"  data-wow-delay="0.2s">
-        <div className="airbnb-banner-background">
+      <div className="project-airbnb-china">
+        <div className="airbnb-banner-background wow fadeIn" data-wow-delay="0.2s">
           <div id="belo-animation" className="animate"></div>
         </div>
         <AbcBanner/>
@@ -232,6 +234,9 @@ export default class ABC extends PureComponent {
           <div id="belo-animation-alter" className="animate"></div>
         </div>
         <AbcFooter/>
+        <Footer
+          theme="light"
+        />
       </div>
     );
   }

@@ -197,16 +197,16 @@ export default class AboutMe extends PureComponent {
                   </h1>
                   <p>
                     I have rich experience in interface / interaction design, and rapid prototyping.
-                    <br></br>I play fingerstyle / classic guitar in my spare time.
-                    <br></br>I have a shiba, his name is <a>O</a>.
+                    <br></br>I enjoy professional challenges and strive for build pixel-perfect product, service and experience.
+                    <br></br>Feel free to reach out!
                   </p>
-                  <div className="row wechat-code">
+                  {/* <div className="row wechat-code">
                     <img
                       alt="wechat"
                       src={process.env.PUBLIC_URL + "/static/media/image/wechat_code.jpg"}
                       srcSet={process.env.PUBLIC_URL + "/static/media/image/wechat_code@2x.jpg 2x"}
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="one column"></div>
               </div>

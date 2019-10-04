@@ -1,0 +1,95 @@
+.site-footer.light {
+    background-color: white;
+}
+
+.site-footer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.site-footer.light h4 {
+    font-family: 'SF Display';
+    font-size: 18px;
+    margin: 16px 0 8px 0;
+    line-height: 1.2;
+    color: black;
+}
+
+.site-footer.dark h4 {
+    font-family: 'SF Display';
+    font-size: 18px;
+    margin: 16px 0 8px 0;
+    line-height: 1.2;
+    color: white;
+}
+
+.site-footer.light .devider {
+    width: 100%;
+    background-color: black;
+    opacity: 0.08;
+    height: 1px;
+}
+
+.site-footer.dark .devider {
+    width: 100%;
+    background-color: white;
+    opacity: 0.08;
+    height: 1px;
+}
+
+.site-footer.light p {
+    font-family: 'SF Light';
+    font-size: 18px;
+    margin: 0 0 0 0;
+    line-height: 1.2;
+    color: black;
+    opacity: 0.5;
+}
+
+.site-footer.dark p {
+    font-family: 'SF Light';
+    font-size: 18px;
+    margin: 0 0 0 0;
+    line-height: 1.2;
+    color: white;
+    opacity: 0.5;
+}
+
+.footer-icon-wrapper {
+    margin-top: 16px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 72px;
+}
+
+.site-footer .footer-icon-wrapper h4 {
+    line-height: 50px;
+}
+
+.site-footer .four.columns {
+    width: 34.6666666%;
+}
+
+.site-footer .four.columns h4 {
+    text-align: right;
+}
+
+.elsewhere-links .four.columns {
+    width: 33.3%;
+}
+
+.site-footer a {
+    text-decoration: none;
+}
+
+.site-footer.light a:hover h4 {
+    color: #E61E4D;
+}
+
+.site-footer.dark a:hover h4 {
+    color: #FFF500;
+}
+

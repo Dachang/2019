@@ -18,6 +18,16 @@
   margin: 0 0 0 0;
   color: white;
   line-height: 100px;
+  transition: color 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transition: color 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.work-card .card-info.light:hover h4 {
+  color: #E61E4D;
+}
+
+.work-card .card-info:hover h4 {
+  color: #FFF500;
 }
 
 .work-card .card-info {
@@ -43,7 +53,7 @@
   text-decoration: none;
 }
 
-.work-card:hover .card-info p.link-label{
+.work-card .card-info:hover p.link-label{
   text-decoration: underline;
 }
 

@@ -9,7 +9,7 @@ export default class Marquee extends PureComponent {
         <div className="one column"></div>
         <div className="main-content ten columns">
           <div className="row">
-            <div className="nine columns">
+            <div className="nine columns wow fadeIn">
               <h1>
                 Hi, I’m DC,<br></br>a digital experience designer & developer
                 living in Beijing.
