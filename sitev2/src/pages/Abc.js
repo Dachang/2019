@@ -10,7 +10,7 @@ function AbcBanner(props) {
         <div className="row" data-parallax='{"y" : -320, "smoothness" : 2}'>
           <h1 className="project-info-header wow fadeIn">Airbnb</h1>
           <p className="project-intro  wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.35s">
-            Design owner of China guest search & decide experience.<br/>
+            Design owner of China guest experience (search & decide).<br/>
             Iterate product features with XFN peers, see through launches with business impact.<br/>
             Drive design visions that outline product team roadmap.
           </p>
@@ -21,11 +21,80 @@ function AbcBanner(props) {
   )
 }
 
+function AbcActivity(props) {
+  return (
+    <div className="abc-activity row">
+      <div className="two columns"></div>
+      <div className="eight columns">
+        <h1 className="project-info-header wow fadeIn">Beyond Interface</h1>
+        <div className="row abc-highlight-cards wow fadeIn" data-wow-delay="0.2s">
+          <div className="six columns">
+            <img
+              className="abc-highlight-card-cover"
+              alt="abc-highlight-card-cover"
+              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-sprint.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-sprint@2x.jpg 2x"}
+            />
+            <h4>Design Sprints</h4>
+          </div>
+          <div className="six columns right">
+            <img
+              className="abc-highlight-card-cover"
+              alt="abc-highlight-card-cover"
+              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-research.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-research@2x.jpg 2x"}
+            />
+            <h4>Research Sessions</h4>
+          </div>
+        </div>
+        <div className="row abc-highlight-cards wow fadeIn" data-wow-delay="0.2s">
+          <div className="six columns">
+            <img
+              className="abc-highlight-card-cover"
+              alt="abc-highlight-card-cover"
+              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-workshop.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-workshop@2x.jpg 2x"}
+            />
+            <h4>Creative Coding Workshop</h4>
+          </div>
+          <div className="six columns right">
+            <img
+              className="abc-highlight-card-cover"
+              alt="abc-highlight-card-cover"
+              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-framer.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-framer@2x.jpg 2x"}
+            />
+            <h4>Framer 101</h4>
+          </div>
+        </div>
+      </div>
+      <div className="two columns"></div>
+    </div>
+  )
+}
+
+function AbcFooter(props) {
+  return (
+    <div className="abc-footer row">
+      <div className="two columns"></div>
+      <div className="eight columns">
+        <h1 className="wow fadeIn">To Be Continued</h1>
+        <p className="project-intro  wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.35s">
+         Content may be hidden due to non-disclosure agreements.<br/>
+         For additional information, please reach out accordingly.
+        </p>
+      </div>
+      <div className="two columns"></div>
+    </div>
+  )
+}
+
 function AbcHighlightsTri(props) {
   return (
     <div className={"abc-highlight row wow fadeIn " + props.rowCount} data-wow-delay="0.2s">
       <div className="two columns"></div>
       <div className="eight columns abc-highlight-cards">
+        <h1 className="project-info-header wow fadeIn">Product Design</h1>
         <div className=" row">
           <div className="four columns">
             <img
@@ -158,6 +227,11 @@ export default class ABC extends PureComponent {
         />
         <AbcHighlightsLeftDual/>
         <AbcHighlightsRightDual/>
+        <AbcActivity/>
+        <div className="airbnb-footer-background">
+          <div id="belo-animation-alter" className="animate"></div>
+        </div>
+        <AbcFooter/>
       </div>
     );
   }

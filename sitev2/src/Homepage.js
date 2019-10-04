@@ -18,7 +18,7 @@ class Homepage extends PureComponent {
                 imageSources={process.env.PUBLIC_URL + "/static/media/image/abc_workcard"}
                 title="Airbnb"
                 time="2018.4 - Present"
-                description="Design owner of China guest search experience."
+                description="Design owner of China guest experience (search & decide)."
                 cardTheme="light"
               />
             </Link>
