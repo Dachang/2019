@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import ProjectBanner from '../components/ProjectBanner.js';
 import VideoCard from '../components/VideoCard.js';
 import BackButton from '../components/BackButton';
+import Footer from '../components/Footer';
 import '../styles/Motb.css';
 
 function Floorplan(props) {
@@ -65,6 +66,143 @@ function Floorplan(props) {
   )
 }
 
+function OnsiteGallery(props) {
+  return (
+    <div className="motb-onsite-gallery wow fadeIn">
+      <div className="row motb-gallery-title">
+        <div className="one column"></div>
+        <div className="ten columns">
+          <h1>Onsite Gallery</h1>
+          <p>The interactive system is deployed on the second floor of MOTB exhibition hall, which features long-term exhibitions, digital interactive kiosks, as well as rare artifact collections.</p>
+        </div>
+        <div className="one column"></div>
+      </div>
+      <div className="row motb-gallery-grids first wow fadeIn">
+        <div className="one column"></div>
+        <div className="ten columns">
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel@2x.jpg 2x"}
+            />
+          </div>
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map@2x.jpg 2x"}
+            />
+          </div>
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps@2x.jpg 2x"}
+            />
+          </div>
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz@2x.jpg 2x"}
+            />
+          </div>
+        </div>
+        <div className="one column"></div>
+      </div>
+      <div className="row motb-gallery-grids third wow fadeIn">
+        <div className="one column"></div>
+        <div className="ten columns">
+        <div className="six columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea@2x.jpg 2x"}
+            />
+        </div>
+        <div className="six columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb@2x.jpg 2x"}
+            />
+        </div>
+        </div>
+        <div className="one column"></div>
+      </div>
+      <div className="row motb-gallery-grids second wow fadeIn">
+        <div className="one column"></div>
+        <div className="ten columns">
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud@2x.jpg 2x"}
+            />
+          </div>
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work@2x.jpg 2x"}
+            />
+          </div>
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name@2x.jpg 2x"}
+            />
+          </div>
+          <div className="three columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr@2x.jpg 2x"}
+            />
+          </div>
+        </div>
+        <div className="one column"></div>
+      </div>
+      <div className="row motb-gallery-grids third wow fadeIn">
+        <div className="one column"></div>
+        <div className="ten columns">
+        <div className="six columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec@2x.jpg 2x"}
+            />
+        </div>
+        <div className="six columns">
+            <img
+              alt="motb-floorplan-bg"
+              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited.jpg"}
+              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited@2x.jpg 2x"}
+            />
+        </div>
+        </div>
+        <div className="one column"></div>
+      </div>
+    </div>
+  )
+}
+
+function ComeAndVisit(props) {
+  return (
+    <div className="motb-visit wow fadeIn">
+      <div className="one column"></div>
+      <div className="ten columns">
+        <h1>Come & Visit!</h1>
+        <p>The museum is located at 400 4th St. SW in Washington, D.C.<br></br>
+        Daily Hours: 10 a.m. - 5 p.m.<br></br></p><a href="https://www.museumofthebible.org">Official Website</a>
+      </div>
+      <div className="one column"></div>
+    </div>
+  )
+}
+
 export default class Motb extends PureComponent {
   render() {
     return (
@@ -121,6 +259,11 @@ export default class Motb extends PureComponent {
           />
         </div>
         <Floorplan/>
+        <OnsiteGallery/>
+        <ComeAndVisit/>
+        <Footer
+          theme="dark"
+        />
       </div>
     );
   }

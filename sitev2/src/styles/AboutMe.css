@@ -8,6 +8,10 @@
   display: flex;
 }
 
+#footer-canvas {
+  pointer-events: none;
+}
+
 .about-me h1 {
   font-family: 'SF Display', "HelveticaNeue";
   font-size: 86px;
