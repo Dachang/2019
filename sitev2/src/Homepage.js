@@ -59,7 +59,7 @@ class Homepage extends PureComponent {
             </div>
           </div>
         </div>
-        <div className="latest-work third-row row">
+        <div className="latest-work third-row row last">
           <div className="twelve columns">
             <div className="row">
               <div className="six columns left">

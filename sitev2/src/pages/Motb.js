@@ -196,7 +196,7 @@ function ComeAndVisit(props) {
       <div className="ten columns">
         <h1>Come & Visit!</h1>
         <p>The museum is located at 400 4th St. SW in Washington, D.C.<br></br>
-        Daily Hours: 10 a.m. - 5 p.m.<br></br></p><a href="https://www.museumofthebible.org">Official Website</a>
+        Daily Hours: 10 a.m. - 5 p.m.<br></br></p><a href="https://www.museumofthebible.org" target="_blank">Official Website</a>
       </div>
       <div className="one column"></div>
     </div>
@@ -211,7 +211,7 @@ export default class Motb extends PureComponent {
         <ProjectBanner
           imageSources={process.env.PUBLIC_URL + "/static/media/image/motb_project_banner"}
           title="Museum of the Bible"
-          description={"The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology.<br/><br/> As the main interaction designer & front-end developer of this project, I crafted 12 digital interactives from interaction / motion design, to live kiosk applications with node JS web stack (React JS / Angular JS / Webpack).<br/><br/> The museum is open to public since November, 2017."}
+          description={"The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology.<br/><br/> As the interaction designer & front-end developer of this project, I crafted 12 digital interactives from interaction / motion design, to live kiosk applications with node JS web stack (React JS / Angular JS / Webpack).<br/><br/> The museum is open to public since November, 2017."}
         />
         <div className="highlight-section row first">
           <VideoCard

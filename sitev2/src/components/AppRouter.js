@@ -1,12 +1,14 @@
-import React, { PureComponent } from 'react';
-import { HashRouter as Router, Route, Link } from "react-router-dom";
-import Homepage from '../Homepage.js';
-import Motb from '../pages/Motb.js';
-import Abc from '../pages/Abc.js';
-import Lbi from '../pages/Lbi.js';
-import Fig from '../pages/Fig.js';
-import Cdi from '../pages/Cdi.js';
+import React, { PureComponent, Suspense, lazy } from 'react';
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import asyncComponent from "../components/AsyncComponent";
 import ScrollToTop from '../components/ScrollToTop.js';
+
+const AsyncHome = asyncComponent(() => import("../Homepage.js"));
+const AsynbMotb = asyncComponent(() => import("../pages/Motb.js"));
+const AsyncAbc = asyncComponent(() => import("../pages/Abc.js"));
+const AsyncLbi = asyncComponent(() => import("../pages/Lbi.js"));
+const AsyncFig = asyncComponent(() => import("../pages/Fig.js"));
+const AsyncCdi = asyncComponent(() => import("../pages/Cdi.js"));
 
 export default class AppRouter extends PureComponent {
 
@@ -14,14 +16,18 @@ export default class AppRouter extends PureComponent {
     return (
       <Router>
         <ScrollToTop>
-          <div>
-            <Route path="/" exact component={Homepage} />
-            <Route path="/motb/" component={Motb} />
-            <Route path="/lbi/" component={Lbi} />
-            <Route path="/cdi-mobile/" component={Cdi} />
-            <Route path="/airbnbchina/" component={Abc} />
-            <Route path="/figmeasure/" component={Fig} />
-          </div>
+          {/* <Suspense fallback={<div>Loading...</div>}> */}
+            <Switch>
+              <div>
+                <Route path="/" exact component={AsyncHome} />
+                <Route path="/motb/" exact component={AsynbMotb} />
+                <Route path="/lbi/" exact component={AsyncLbi} />
+                <Route path="/cdi-mobile/" exact component={AsyncCdi} />
+                <Route path="/airbnbchina/" exact component={AsyncAbc} />
+                <Route path="/figmeasure/" exact component={AsyncFig} />
+              </div>
+            </Switch>
+          {/* </Suspense> */}
         </ScrollToTop>
       </Router>
     );

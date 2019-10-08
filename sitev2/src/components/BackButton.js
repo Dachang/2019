@@ -5,7 +5,7 @@ import '../styles/BackButton.css';
 export default class BackButton extends PureComponent {
     render() {
         return (
-          <div className="back-to-home-button row wow fadeIn" data-wow-delay="1s">
+          <div className="back-to-home-button row wow fadeIn" data-wow-delay="0.75s">
             <Link to="/">
                 <div className="one column">
                     <svg width="133" height="80" viewBox="0 0 133 80" fill="none">

@@ -56,8 +56,11 @@ canvas {
 
 .latest-work {
   display: flex;
-  margin-top: -12px;
   background-color: #000;
+}
+
+.latest-work.third-row.last {
+  margin-top: -12px;
 }
 
 .latest-work .six.columns {
