@@ -4,7 +4,10 @@ import ProgressiveImage from '../components/ProgressiveImage';
 import VideoCard from '../components/VideoCard.js';
 import BackButton from '../components/BackButton';
 import Footer from '../components/Footer';
+import LazyLoad from 'react-lazyload';
 import '../styles/Motb.css';
+import '../App.css';
+import '../skeleton.css';
 
 function Floorplan(props) {
   return (
@@ -213,57 +216,73 @@ export default class Motb extends PureComponent {
           title="Museum of the Bible"
           description={"The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology.<br/><br/> As the interaction designer & front-end developer of this project, I crafted 12 digital interactives from interaction / motion design, to live kiosk applications with node JS web stack (React JS / Angular JS / Webpack).<br/><br/> The museum is open to public since November, 2017."}
         />
-        <div className="highlight-section row first">
-          <VideoCard
-            yOffset="-320"
-            videoSrc="/static/media/videos/gospel_short.mp4"
-            imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
-            title="Interactive: Gospels and Spirituals"
-            description="The interactive showcased soundtracks from 24 artists, who performed six different gospels that inspried by the Bible. Soundtracks are sampled, parsed and visualized into waves, as spiritual lyrics highlighting on the side."
+        <LazyLoad height={200}>
+          <div className="highlight-section row first">
+            <VideoCard
+              yOffset="-320"
+              videoSrc="/static/media/videos/gospel_short.mp4"
+              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              title="Interactive: Gospels and Spirituals"
+              description="The interactive showcased soundtracks from 24 artists, who performed six different gospels that inspried by the Bible. Soundtracks are sampled, parsed and visualized into waves, as spiritual lyrics highlighting on the side."
+            />
+          </div>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <div className="highlight-section row">
+            <VideoCard
+              yOffset="-320"
+              videoSrc="/static/media/videos/bol.mp4"
+              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              title="Interactive: Bible Out Loud"
+              description="The interactive recorded soundtracks that people read the Bible with minority languages from all over the world."
+            />
+          </div>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <div className="highlight-section row">
+            <VideoCard
+              yOffset="-320"
+              videoSrc="/static/media/videos/hmr.mp4"
+              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              title="Interactive: Human Right Series"
+              description="A collection of six interactives that digitalized exhibit documents, videos & collections of how 10 historical legends fight for human rights & justice, eliminate slavery, with vivid media and rich interactions."
+            />
+          </div>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <div className="highlight-section row">
+            <VideoCard
+              yOffset="-320"
+              videoSrc="/static/media/videos/bom.mp4"
+              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              title="Interactive: Bible on the Map"
+              description="The interactive digital map scrolls infinitely, showcased 200+ cities / towns / landmarks in U.S.A that are named after Bible references."
+            />
+          </div>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <div className="highlight-section row">
+            <VideoCard
+              yOffset="-320"
+              videoSrc="/static/media/videos/bn.mp4"
+              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              title="Interactive: Biblical Names"
+              description="The interactive showcased 1000+ names that are inspired / originated from Bible references, documented with the first appearance in Bible of each entry."
+            />
+          </div>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <Floorplan/>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <OnsiteGallery/>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <ComeAndVisit/>
+          <Footer
+            theme="dark"
           />
-        </div>
-        <div className="highlight-section row">
-          <VideoCard
-            yOffset="-320"
-            videoSrc="/static/media/videos/bol.mp4"
-            imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
-            title="Interactive: Bible Out Loud"
-            description="The interactive recorded soundtracks that people read the Bible with minority languages from all over the world."
-          />
-        </div>
-        <div className="highlight-section row">
-          <VideoCard
-            yOffset="-320"
-            videoSrc="/static/media/videos/hmr.mp4"
-            imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
-            title="Interactive: Human Right Series"
-            description="A collection of six interactives that digitalized exhibit documents, videos & collections of how 10 historical legends fight for human rights & justice, eliminate slavery, with vivid media and rich interactions."
-          />
-        </div>
-        <div className="highlight-section row">
-          <VideoCard
-            yOffset="-320"
-            videoSrc="/static/media/videos/bom.mp4"
-            imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
-            title="Interactive: Bible on the Map"
-            description="The interactive digital map scrolls infinitely, showcased 200+ cities / towns / landmarks in U.S.A that are named after Bible references."
-          />
-        </div>
-        <div className="highlight-section row">
-          <VideoCard
-            yOffset="-320"
-            videoSrc="/static/media/videos/bn.mp4"
-            imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
-            title="Interactive: Biblical Names"
-            description="The interactive showcased 1000+ names that are inspired / originated from Bible references, documented with the first appearance in Bible of each entry."
-          />
-        </div>
-        <Floorplan/>
-        <OnsiteGallery/>
-        <ComeAndVisit/>
-        <Footer
-          theme="dark"
-        />
+        </LazyLoad>
       </div>
     );
   }

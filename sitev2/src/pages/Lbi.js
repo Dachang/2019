@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import LazyLoad from 'react-lazyload';
 import BackButton from '../components/BackButton';
 import Footer from '../components/Footer';
 import ProgressiveImage from '../components/ProgressiveImage';
@@ -6,6 +7,8 @@ import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
 
 import '../styles/Lbi.css';
+import '../App.css';
+import '../skeleton.css';
 
 function LbiBanner(props) {
   return (
@@ -108,9 +111,13 @@ export default class Lbi extends PureComponent {
         <LbiBanner/>
         <div id="trigger"></div>
         <LbiIntro/>
-        <LbiWeb/>
+        <LazyLoad height={200}>
+          <LbiWeb/>
+        </LazyLoad>
         <div id="exhibition-trigger"></div>
-        <LbiExhibition/>
+        <LazyLoad height={200}>
+          <LbiExhibition/>
+        </LazyLoad>
         <Footer
           theme="dark"
         />

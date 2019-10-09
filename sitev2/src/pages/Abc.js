@@ -1,5 +1,8 @@
 import React, { PureComponent } from 'react';
+import LazyLoad from 'react-lazyload';
 import '../styles/Abc.css';
+import '../App.css';
+import '../skeleton.css';
 import ProgressiveImage from '../components/ProgressiveImage';
 import Footer from '../components/Footer';
 import BackButton from '../components/BackButton';
@@ -225,19 +228,25 @@ export default class ABC extends PureComponent {
           <div id="belo-animation" className="animate"></div>
         </div>
         <AbcBanner/>
-        <AbcHighlightsTri
-          rowCount="first"
-        />
-        <AbcHighlightsLeftDual/>
-        <AbcHighlightsRightDual/>
-        <AbcActivity/>
-        <div className="airbnb-footer-background">
-          <div id="belo-animation-alter" className="animate"></div>
-        </div>
-        <AbcFooter/>
-        <Footer
-          theme="light"
-        />
+        <LazyLoad height={200}>
+          <AbcHighlightsTri
+            rowCount="first"
+          />
+          <AbcHighlightsLeftDual/>
+          <AbcHighlightsRightDual/>  
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <AbcActivity/>
+        </LazyLoad>
+        <LazyLoad height={200}>
+          <div className="airbnb-footer-background">
+            <div id="belo-animation-alter" className="animate"></div>
+          </div>
+          <AbcFooter/>
+          <Footer
+            theme="light"
+          />
+        </LazyLoad>
       </div>
     );
   }
