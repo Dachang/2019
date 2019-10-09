@@ -77,7 +77,7 @@ class Homepage extends PureComponent {
                   title="Earlier Work"
                   to="/cdi-mobile"
                   time="2013 - 2016"
-                  description="Once upon a time, stuff that entertained."
+                  description="Collections from the past."
                 />
               </div>
             </div>

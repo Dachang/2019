@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import ProgressiveImage from '../components/ProgressiveImage';
 import '../styles/ProjectBanner.css';
 
 export default class ProjectBanner extends PureComponent {
@@ -6,11 +7,11 @@ export default class ProjectBanner extends PureComponent {
     return (
       <div
         className="project-banner">
-        <img
+        <ProgressiveImage
           className="cover"
-          alt="museum of the bible interactive system"
-          src={this.props.imageSources + ".jpg"}
-          srcSet={this.props.imageSources + "@2x.jpg 2x"}
+          altName="museum of the bible interactive system"
+          preview={this.props.imageSources + "_small.jpg"}
+          image={this.props.imageSources + ".jpg"}
         />
         <div className="cover-dark-hover wow fadeIn" data-wow-delay="0.2s"></div>
         <div className="project-info row">

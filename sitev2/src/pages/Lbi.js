@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import BackButton from '../components/BackButton';
 import Footer from '../components/Footer';
+import ProgressiveImage from '../components/ProgressiveImage';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
 
@@ -8,20 +9,20 @@ import '../styles/Lbi.css';
 
 function LbiBanner(props) {
   return (
-    <div className="lbi-lbi-banner">
-      <Controller>
-        <Scene triggerElement="#trigger" duration={600} offset={-320}>
-          <Tween from={{ opacity: 1 }} to={{ opacity: 0 }} >
-            <img
+    <Controller>
+      <Scene triggerElement="#trigger" duration={600} offset={-320}>
+        <Tween from={{ opacity: 1 }} to={{ opacity: 0 }} >
+          <div className="lbi-lbi-banner">
+            <ProgressiveImage
               className="wow fadeIn"
-              alt="lbi-lbi-banner"
-              src={process.env.PUBLIC_URL + "/static/media/image/lbi_project_banner.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/lbi_project_banner@2x.jpg 2x"}
+              altName="lbi-lbi-banner"
+              preview={process.env.PUBLIC_URL + "/static/media/image/lbi_project_banner.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/lbi_project_banner@2x.jpg"}
             />
+          </div>
           </Tween>
-        </Scene>
-      </Controller>
-    </div>
+      </Scene>
+    </Controller>
   )
 }
 
@@ -58,11 +59,11 @@ function LbiWeb(props) {
         </Scene>
       </Controller>
       <div className="five columns">
-        <img
+        <ProgressiveImage
           className="wow fadeIn"
-          alt="lbi-lbi-banner"
-          src={process.env.PUBLIC_URL + "/static/media/image/lbi_web.jpg"}
-          srcSet={process.env.PUBLIC_URL + "/static/media/image/lbi_web@2x.jpg 2x"}
+          altName="lbi-lbi-banner"
+          preview={process.env.PUBLIC_URL + "/static/media/image/lbi_web.jpg"}
+          image={process.env.PUBLIC_URL + "/static/media/image/lbi_web@2x.jpg"}
         />
       </div>
     </div>
@@ -87,13 +88,11 @@ function LbiExhibition(props) {
               </Tween>
           </Scene>
       </Controller>
-      <div className="row lbi-exhibition-photo">
-        <img
-          className="wow fadeIn"
-          data-wow-delay="0.5s"
-          alt="lbi-lbi-banner"
-          src={process.env.PUBLIC_URL + "/static/media/image/lbi_onsite.jpg"}
-          srcSet={process.env.PUBLIC_URL + "/static/media/image/lbi_onsite@2x.jpg 2x"}
+      <div className="row lbi-exhibition-photo wow fadeIn" data-wow-delay="0.5s">
+        <ProgressiveImage
+          altName="lbi-lbi-banner"
+          preview={process.env.PUBLIC_URL + "/static/media/image/lbi_onsite.jpg"}
+          image={process.env.PUBLIC_URL + "/static/media/image/lbi_onsite@2x.jpg"}
         />
       </div>
     </div>

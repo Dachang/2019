@@ -16,18 +16,16 @@ export default class AppRouter extends PureComponent {
     return (
       <Router>
         <ScrollToTop>
-          {/* <Suspense fallback={<div>Loading...</div>}> */}
-            <Switch>
-              <div>
-                <Route path="/" exact component={AsyncHome} />
-                <Route path="/motb/" exact component={AsynbMotb} />
-                <Route path="/lbi/" exact component={AsyncLbi} />
-                <Route path="/cdi-mobile/" exact component={AsyncCdi} />
-                <Route path="/airbnbchina/" exact component={AsyncAbc} />
-                <Route path="/figmeasure/" exact component={AsyncFig} />
-              </div>
-            </Switch>
-          {/* </Suspense> */}
+          <Switch>
+            <div>
+              <Route path="/" exact component={AsyncHome} />
+              <Route path="/motb/" component={AsynbMotb} />
+              <Route path="/lbi/" component={AsyncLbi} />
+              <Route path="/cdi-mobile/" component={AsyncCdi} />
+              <Route path="/airbnbchina/" component={AsyncAbc} />
+              <Route path="/figmeasure/" component={AsyncFig} />
+            </div>
+          </Switch>
         </ScrollToTop>
       </Router>
     );

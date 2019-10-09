@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import '../styles/Abc.css';
-import '../components/Footer'
+import ProgressiveImage from '../components/ProgressiveImage';
 import Footer from '../components/Footer';
 import BackButton from '../components/BackButton';
 
@@ -32,40 +32,40 @@ function AbcActivity(props) {
         <h1 className="project-info-header wow fadeIn">Beyond Interface</h1>
         <div className="row abc-highlight-cards wow fadeIn" data-wow-delay="0.2s">
           <div className="six columns">
-            <img
+            <ProgressiveImage
               className="abc-highlight-card-cover"
-              alt="abc-highlight-card-cover"
-              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-sprint.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-sprint@2x.jpg 2x"}
+              altName="abc-highlight-card-cover"
+              preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-sprint.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-sprint@2x.jpg"}
             />
             <h4>Design Sprints</h4>
           </div>
           <div className="six columns right">
-            <img
+            <ProgressiveImage
               className="abc-highlight-card-cover"
-              alt="abc-highlight-card-cover"
-              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-research.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-research@2x.jpg 2x"}
+              altName="abc-highlight-card-cover"
+              preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-research.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-research@2x.jpg"}
             />
             <h4>Research Sessions</h4>
           </div>
         </div>
         <div className="row abc-highlight-cards wow fadeIn" data-wow-delay="0.2s">
           <div className="six columns">
-            <img
+            <ProgressiveImage
               className="abc-highlight-card-cover"
-              alt="abc-highlight-card-cover"
-              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-workshop.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-workshop@2x.jpg 2x"}
+              altName="abc-highlight-card-cover"
+              preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-workshop.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-workshop@2x.jpg"}
             />
             <h4>Creative Coding Workshop</h4>
           </div>
           <div className="six columns right">
-            <img
+            <ProgressiveImage
               className="abc-highlight-card-cover"
-              alt="abc-highlight-card-cover"
-              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-framer.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-framer@2x.jpg 2x"}
+              altName="abc-highlight-card-cover"
+              preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-framer.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-framer@2x.jpg"}
             />
             <h4>Framer 101</h4>
           </div>
@@ -100,29 +100,29 @@ function AbcHighlightsTri(props) {
         <h1 className="project-info-header wow fadeIn">Product</h1>
         <div className=" row">
           <div className="four columns">
-            <img
+            <ProgressiveImage
               className="abc-highlight-card-cover"
-              alt="abc-highlight-card-cover"
-              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-search.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-search@2x.jpg 2x"}
+              altName="abc-highlight-card-cover"
+              preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-search.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-search@2x.jpg"}
             />
             <h4>Search</h4>
           </div>
           <div className="four columns">
-            <img
+            <ProgressiveImage
               className="abc-highlight-card-cover"
-              alt="abc-highlight-card-cover"
-              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-filter.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-filter@2x.jpg 2x"}
+              altName="abc-highlight-card-cover"
+              preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-filter.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-filter@2x.jpg"}
             />
             <h4>Filter</h4>
           </div>
           <div className="four columns last">
-            <img
+            <ProgressiveImage
               className="abc-highlight-card-cover"
-              alt="abc-highlight-card-cover"
-              src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-map.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-map@2x.jpg 2x"}
+              altName="abc-highlight-card-cover"
+              preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-map.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-map@2x.jpg"}
             />
             <h4>Location</h4>
           </div>
@@ -152,7 +152,6 @@ function AbcVideoCard(props) {
         className="abc-highlight-card-cover"
         alt="abc-highlight-card-cover"
         src={process.env.PUBLIC_URL + props.imageSource + ".jpg"}
-        srcSet={process.env.PUBLIC_URL + props.imageSource + "@2x.jpg 2x"}
       />
     </div>
   )
@@ -165,11 +164,11 @@ function AbcHighlightsLeftDual(props) {
         <div className="eight columns abc-highlight-cards">
           <div className=" row">
             <div className="eight columns">
-              <img
+              <ProgressiveImage
                 className="abc-highlight-card-cover"
-                alt="abc-highlight-card-cover"
-                src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-pdp.jpg"}
-                srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-pdp@2x.jpg 2x"}
+                altName="abc-highlight-card-cover"
+                preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-pdp.jpg"}
+                image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-pdp@2x.jpg"}
               />
               <h4>Decide</h4>
             </div>
@@ -201,11 +200,11 @@ function AbcHighlightsRightDual(props) {
               <h4>Home Tour</h4>
             </div>
             <div className="eight columns">
-              <img
+              <ProgressiveImage
                 className="abc-highlight-card-cover"
-                alt="abc-highlight-card-cover"
-                src={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-gallery.jpg"}
-                srcSet={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-gallery@2x.jpg 2x"}
+                altName="abc-highlight-card-cover"
+                preview={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-gallery.jpg"}
+                image={process.env.PUBLIC_URL + "/static/media/image/abc-highlight-gallery@2x.jpg"}
               />
               <h4>Gallery</h4>
             </div>

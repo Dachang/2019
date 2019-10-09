@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import ProjectBanner from '../components/ProjectBanner.js';
+import ProgressiveImage from '../components/ProgressiveImage';
 import VideoCard from '../components/VideoCard.js';
 import BackButton from '../components/BackButton';
 import Footer from '../components/Footer';
@@ -48,18 +49,17 @@ function Floorplan(props) {
         <div className="one column"></div>
       </div>
       <div className="row motb-floorplan-bg">
-        <img
-          className="wow fadeIn"
-          alt="motb-floorplan-bg"
-          src={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan.png"}
-          srcSet={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan@2x.png 2x"}
+        <ProgressiveImage
+          className="cover wow fadeIn"
+          altName="motb-floorplan-bg"
+          preview={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan.png"}
+          image={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan@2x.png"}
         />
-        <img
+        <ProgressiveImage
           className="foreground wow fadeIn"
-          data-wow-delay="0.75s"
-          alt="motb-floorplan-bg"
-          src={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan_fore.png"}
-          srcSet={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan_fore@2x.png 2x"}
+          altName="motb-floorplan-bg"
+          preview={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan_fore.png"}
+          image={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan_fore@2x.png"}
         />
       </div>
     </div>
@@ -81,31 +81,31 @@ function OnsiteGallery(props) {
         <div className="one column"></div>
         <div className="ten columns">
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel@2x.jpg"}
             />
           </div>
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map@2x.jpg"}
             />
           </div>
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps@2x.jpg"}
             />
           </div>
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz@2x.jpg"}
             />
           </div>
         </div>
@@ -115,17 +115,17 @@ function OnsiteGallery(props) {
         <div className="one column"></div>
         <div className="ten columns">
         <div className="six columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea@2x.jpg"}
             />
         </div>
         <div className="six columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb@2x.jpg"}
             />
         </div>
         </div>
@@ -135,31 +135,31 @@ function OnsiteGallery(props) {
         <div className="one column"></div>
         <div className="ten columns">
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud@2x.jpg"}
             />
           </div>
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work@2x.jpg"}
             />
           </div>
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name@2x.jpg"}
             />
           </div>
           <div className="three columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr@2x.jpg"}
             />
           </div>
         </div>
@@ -169,17 +169,17 @@ function OnsiteGallery(props) {
         <div className="one column"></div>
         <div className="ten columns">
         <div className="six columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec@2x.jpg"}
             />
         </div>
         <div className="six columns">
-            <img
-              alt="motb-floorplan-bg"
-              src={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited.jpg"}
-              srcSet={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited@2x.jpg 2x"}
+            <ProgressiveImage
+              altName="motb-floorplan-bg"
+              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited.jpg"}
+              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited@2x.jpg"}
             />
         </div>
         </div>
