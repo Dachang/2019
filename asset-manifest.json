@@ -1,16 +1,16 @@
 {
   "main.css": "static/css/main.65027555.css",
   "main.css.map": "static/css/main.65027555.css.map",
-  "main.js": "static/js/main.035b6924.js",
-  "main.js.map": "static/js/main.035b6924.js.map",
+  "main.js": "static/js/main.94db6525.js",
+  "main.js.map": "static/js/main.94db6525.js.map",
   "static/js/0.1077dee5.chunk.js": "static/js/0.1077dee5.chunk.js",
   "static/js/0.1077dee5.chunk.js.map": "static/js/0.1077dee5.chunk.js.map",
   "static/js/1.437a3cb9.chunk.js": "static/js/1.437a3cb9.chunk.js",
   "static/js/1.437a3cb9.chunk.js.map": "static/js/1.437a3cb9.chunk.js.map",
   "static/js/2.05ec05e6.chunk.js": "static/js/2.05ec05e6.chunk.js",
   "static/js/2.05ec05e6.chunk.js.map": "static/js/2.05ec05e6.chunk.js.map",
-  "static/js/3.11f04063.chunk.js": "static/js/3.11f04063.chunk.js",
-  "static/js/3.11f04063.chunk.js.map": "static/js/3.11f04063.chunk.js.map",
+  "static/js/3.b6abf72c.chunk.js": "static/js/3.b6abf72c.chunk.js",
+  "static/js/3.b6abf72c.chunk.js.map": "static/js/3.b6abf72c.chunk.js.map",
   "static/js/4.b9e49aa2.chunk.js": "static/js/4.b9e49aa2.chunk.js",
   "static/js/4.b9e49aa2.chunk.js.map": "static/js/4.b9e49aa2.chunk.js.map",
   "static/js/5.9c09a8ff.chunk.js": "static/js/5.9c09a8ff.chunk.js",
@@ -19,5 +19,6 @@
   "static/media/SF-UI-Text-Light.otf": "static/media/SF-UI-Text-Light.287e8b35.otf",
   "static/media/SF-UI-Text-Regular.otf": "static/media/SF-UI-Text-Regular.af70caa8.otf",
   "static/media/belo-animation-alter.png": "static/media/belo-animation-alter.dde90366.png",
-  "static/media/belo-animation.png": "static/media/belo-animation.aab26008.png"
+  "static/media/belo-animation.png": "static/media/belo-animation.aab26008.png",
+  "static/media/lbi_project_banner@2x.jpg": "static/media/lbi_project_banner@2x.e6c3007d.jpg"
 }
