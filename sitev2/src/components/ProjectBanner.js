@@ -10,8 +10,8 @@ export default class ProjectBanner extends PureComponent {
         <ProgressiveImage
           className="cover"
           altName="museum of the bible interactive system"
-          preview={this.props.imageSources + "_small.jpg"}
-          image={this.props.imageSources + ".jpg"}
+          preview={this.props.previewSource}
+          image={this.props.realSource}
         />
         <div className="cover-dark-hover wow fadeIn" data-wow-delay="0.2s"></div>
         <div className="project-info row">

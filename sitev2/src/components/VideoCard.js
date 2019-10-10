@@ -90,7 +90,7 @@ export default class VideoCard extends PureComponent {
            <img
              className="cover"
              alt="motb-highlight-gospel-and-spirituals"
-             src={this.props.imageSrc + "@2x.png"}
+             src={this.props.imageSrc}
            />
         </div>
         <div className="highlight-info row">

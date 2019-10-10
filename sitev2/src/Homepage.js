@@ -8,16 +8,31 @@ import LazyLoad from 'react-lazyload';
 import './App.css';
 import './skeleton.css';
 
+import AbcWorkcardTinySrc from './assets/image/abc_workcard.jpg';
+import AbcWorkcardSrc from './assets/image/abc_workcard@2x.jpg';
+import MotbWorkcardTinySrc from './assets/image/motb_workcard.jpg';
+import MotbWorkcardSrc from './assets/image/motb_workcard@2x.jpg';
+import LbiWorkcardTinySrc from './assets/image/lbi_workcard.jpg';
+import LbiWorkcardSrc from './assets/image/lbi_workcard@2x.jpg';
+import FigWorkcardTinySrc from './assets/image/fig_workcard.jpg';
+import FigWorkcardSrc from './assets/image/fig_workcard@2x.jpg';
+import CdiWorkcardTinySrc from './assets/image/cdi_workcard.jpg';
+import CdiWorkcardSrc from './assets/image/cdi_workcard@2x.jpg';
+import EarWorkcardTinySrc from './assets/image/early_workcard.jpg';
+import EarWorkcardSrc from './assets/image/early_workcard@2x.jpg';
+
 class Homepage extends PureComponent {
   render() {
     return (
       <div className="App">
         <IndexBanner/>
-        <LazyLoad height={200}>
+        <div id="index-banner-trigger"></div>
+        <LazyLoad height={200} once offset={100}>
           <div className="latest-work first-row row">
             <div className="twelve columns">
               <Workcard
-                imageSources={process.env.PUBLIC_URL + "/static/media/image/abc_workcard"}
+                previewSource={AbcWorkcardTinySrc}
+                trueSource={AbcWorkcardSrc}
                 title="Airbnb"
                 pagelink="/airbnbchina"
                 time="2018.4 - Present"
@@ -27,11 +42,12 @@ class Homepage extends PureComponent {
             </div>
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="latest-work second-row row">
             <div className="twelve columns">
               <Workcard
-                imageSources={process.env.PUBLIC_URL + "/static/media/image/motb_workcard"}
+                previewSource={MotbWorkcardTinySrc}
+                trueSource={MotbWorkcardSrc}
                 title="MOTB"
                 pagelink="/motb"
                 time="2017.3 - 2018.3"
@@ -40,13 +56,14 @@ class Homepage extends PureComponent {
             </div>
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="latest-work third-row row">
             <div className="twelve columns">
               <div className="row">
                 <div className="six columns left">
                   <Workcard
-                    imageSources={process.env.PUBLIC_URL + "/static/media/image/lbi_workcard"}
+                    previewSource={LbiWorkcardTinySrc}
+                    trueSource={LbiWorkcardSrc}
                     title="1938Projekt"
                     pagelink="/lbi"
                     time="2017.12 - 2018.2"
@@ -55,7 +72,8 @@ class Homepage extends PureComponent {
                 </div>
                 <div className="six columns right">
                   <Workcard
-                    imageSources={process.env.PUBLIC_URL + "/static/media/image/fig_workcard"}
+                    previewSource={FigWorkcardTinySrc}
+                    trueSource={FigWorkcardSrc}
                     title="Figmeasure"
                     pagelink="/figmeasure"
                     time="2019.8"
@@ -66,13 +84,14 @@ class Homepage extends PureComponent {
             </div>
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="latest-work third-row row last">
             <div className="twelve columns">
               <div className="row">
                 <div className="six columns left">
                   <Workcard
-                    imageSources={process.env.PUBLIC_URL + "/static/media/image/cdi_workcard"}
+                    previewSource={CdiWorkcardTinySrc}
+                    trueSource={CdiWorkcardSrc}
                     title="CDI Mobile"
                     pagelink="/cdi-mobile"
                     time="2016.6 - 2016.12"
@@ -81,7 +100,8 @@ class Homepage extends PureComponent {
                 </div>
                 <div className="six columns right">
                   <Workcard
-                    imageSources={process.env.PUBLIC_URL + "/static/media/image/early_workcard"}
+                    previewSource={EarWorkcardTinySrc}
+                    trueSource={EarWorkcardSrc}
                     title="Earlier Work"
                     to="/cdi-mobile"
                     time="2013 - 2016"
@@ -92,7 +112,7 @@ class Homepage extends PureComponent {
             </div>
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <AboutMe/>
           <Footer
             theme="dark"

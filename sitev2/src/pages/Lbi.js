@@ -10,6 +10,15 @@ import '../styles/Lbi.css';
 import '../App.css';
 import '../skeleton.css';
 
+import LbiBannerTinySrc from '../assets/image/lbi_project_banner.jpg';
+import LbiBannerSrc from '../assets/image/lbi_project_banner@2x.jpg';
+
+import LbiWebTinySrc from '../assets/image/lbi_web.jpg';
+import LbiWebSrc from '../assets/image/lbi_web@2x.jpg';
+
+import LbiOnsiteTinySrc from '../assets/image/lbi_onsite.jpg';
+import LbiOnsiteSrc from '../assets/image/lbi_onsite@2x.jpg';
+
 function LbiBanner(props) {
   return (
     <Controller>
@@ -19,8 +28,8 @@ function LbiBanner(props) {
             <ProgressiveImage
               className="wow fadeIn"
               altName="lbi-lbi-banner"
-              preview={process.env.PUBLIC_URL + "/static/media/image/lbi_project_banner.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/lbi_project_banner@2x.jpg"}
+              preview={LbiBannerTinySrc}
+              image={LbiBannerSrc}
             />
           </div>
           </Tween>
@@ -37,7 +46,7 @@ function LbiIntro(props) {
           <div className="row lbi-lbi-intro">
             <div className="two columns"></div>
             <div className="eight columns">
-              <h1>Intro</h1>
+              <h1>Intro3</h1>
               <p>”1938 Project: Posts from the Past“ is a captivating, social, web-based and physical exhibition program that presents archive documents – a handwritten letter, diary entry, photo or newspaper article – from German-speaking Jews every day throughout the year 2018, just as they experienced the twelve months before the‘ Kristallnacht‘ and the beginning of the Holocaust.</p>
               <p>As the front-end developer of this project, I built the web application(Vanilla JS/Wordpress), as well as adapting it to interactive kiosks for the exhibition.</p>
             </div>
@@ -65,8 +74,8 @@ function LbiWeb(props) {
         <ProgressiveImage
           className="wow fadeIn"
           altName="lbi-lbi-banner"
-          preview={process.env.PUBLIC_URL + "/static/media/image/lbi_web.jpg"}
-          image={process.env.PUBLIC_URL + "/static/media/image/lbi_web@2x.jpg"}
+          preview={LbiWebTinySrc}
+          image={LbiWebSrc}
         />
       </div>
     </div>
@@ -94,8 +103,8 @@ function LbiExhibition(props) {
       <div className="row lbi-exhibition-photo wow fadeIn" data-wow-delay="0.5s">
         <ProgressiveImage
           altName="lbi-lbi-banner"
-          preview={process.env.PUBLIC_URL + "/static/media/image/lbi_onsite.jpg"}
-          image={process.env.PUBLIC_URL + "/static/media/image/lbi_onsite@2x.jpg"}
+          preview={LbiOnsiteTinySrc}
+          image={LbiOnsiteSrc}
         />
       </div>
     </div>
@@ -111,11 +120,11 @@ export default class Lbi extends PureComponent {
         <LbiBanner/>
         <div id="trigger"></div>
         <LbiIntro/>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <LbiWeb/>
         </LazyLoad>
         <div id="exhibition-trigger"></div>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <LbiExhibition/>
         </LazyLoad>
         <Footer

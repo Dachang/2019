@@ -11,13 +11,13 @@ export default class Workcard extends PureComponent {
         <ProgressiveImage
           className="wow fadeIn"
           altName="museum of the bible interactive system"
-          preview={this.props.imageSources + ".jpg"}
-          image={this.props.imageSources + "@2x.jpg"}
+          preview={this.props.previewSource}
+          image={this.props.trueSource}
         />
         <Link to={this.props.pagelink ? this.props.pagelink : "/"}>
           <div className={"card-info row " + this.props.cardTheme}>
             <div className="one column"></div>
-            <div className="eight columns">
+            <div className="eight columns" data-parallax={'{"y" : -240, "smoothness" : 2}'}>
               <h4>{this.props.title}</h4>
               <p className="time-label">{this.props.time}</p>
               <p>{this.props.description}</p>

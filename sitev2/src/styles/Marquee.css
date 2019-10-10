@@ -1,7 +1,7 @@
 .marquee {
   display: flex;
   width: 100%;
-  margin-top: 140px;
+  margin-top: 12rem;
 }
 
 .marquee .row {
@@ -10,16 +10,30 @@
 
 .marquee h1 {
   font-family: 'SF Display', "HelveticaNeue";
-  font-size: 86px;
+  font-size: calc(32px + 4.5vw);
   margin: 0 0 0 0;
   color: white;
-  line-height: 100px;
+  line-height: 1.2;
 }
 
 .marquee p {
   font-family: 'SF Light';
-  font-size: 32px;
-  line-height: 48px;
+  font-size: calc(16px + 0.9vw);
+  line-height: 1.5;
   color: white;
-  margin-top: 72px;
+  margin-top: 7.2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .marquee h1 {
+     font-size: 6.4vw;
+  }
+  .marquee p {
+    font-size: 1.9vw;
+  }
+}
+
+#index-banner-trigger {
+  position: relative;
+  height: 1px;
 }

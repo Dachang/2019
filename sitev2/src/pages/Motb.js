@@ -9,6 +9,38 @@ import '../styles/Motb.css';
 import '../App.css';
 import '../skeleton.css';
 
+import MotbFloorplanTinySrc from '../assets/image/motb_floorplan.png';
+import MotbFloorplanSrc from '../assets/image/motb_floorplan@2x.png';
+import MotbFloorplanForeTinySrc from '../assets/image/motb_floorplan_fore.png';
+import MotbFloorplanForeSrc from '../assets/image/motb_floorplan_fore@2x.png';
+import MotbGridGospelTinySrc from '../assets/image/motb-grid_gospel.jpg';
+import MotbGridGospelSrc from '../assets/image/motb-grid_gospel@2x.jpg';
+import MotbGridMapTinySrc from '../assets/image/motb-grid_map.jpg';
+import MotbGridMapSrc from '../assets/image/motb-grid_map@2x.jpg';
+import MotbGridPSTinySrc from '../assets/image/motb-grid_ps.jpg';
+import MotbGridPSSrc from '../assets/image/motb-grid_ps@2x.jpg';
+import MotbGridQuizTinySrc from '../assets/image/motb-grid_quiz.jpg';
+import MotbGridQuizSrc from '../assets/image/motb-grid_quiz@2x.jpg';
+import MotbGridOnsiteATinySrc from '../assets/image/motb-grid_onsitea.jpg';
+import MotbGridOnsiteASrc from '../assets/image/motb-grid_onsitea@2x.jpg';
+import MotbGridOnsiteBTinySrc from '../assets/image/motb-grid_onsiteb.jpg';
+import MotbGridOnsiteBSrc from '../assets/image/motb-grid_onsiteb@2x.jpg';
+import MotbGridOnsiteCTinySrc from '../assets/image/motb-grid_onsitec.jpg';
+import MotbGridOnsiteCSrc from '../assets/image/motb-grid_onsitec@2x.jpg';
+import MotbGridOnsiteDTinySrc from '../assets/image/motb-grid_onsited.jpg';
+import MotbGridOnsiteDSrc from '../assets/image/motb-grid_onsited@2x.jpg';
+import MotbGridLoudTinySrc from '../assets/image/motb-grid_loud.jpg';
+import MotbGridLoudSrc from '../assets/image/motb-grid_loud@2x.jpg';
+import MotbGridworkTinySrc from '../assets/image/motb-grid_work.jpg';
+import MotbGridworkSrc from '../assets/image/motb-grid_work@2x.jpg';
+import MotbGridnameTinySrc from '../assets/image/motb-grid_name.jpg';
+import MotbGridnameSrc from '../assets/image/motb-grid_name@2x.jpg';
+import MotbGridhrTinySrc from '../assets/image/motb-grid_hr.jpg';
+import MotbGridhrSrc from '../assets/image/motb-grid_hr@2x.jpg';
+import MotbBannerTinySrc from '../assets/image/motb_project_banner_small.jpg';
+import MotbBannerSrc from '../assets/image/motb_project_banner.jpg';
+import MotbVideoBgSrc from '../assets/image/motb_highlight_gospel@2x.png';
+
 function Floorplan(props) {
   return (
     <div className="motb-floorplan wow fadeIn">
@@ -55,14 +87,14 @@ function Floorplan(props) {
         <ProgressiveImage
           className="cover wow fadeIn"
           altName="motb-floorplan-bg"
-          preview={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan.png"}
-          image={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan@2x.png"}
+          preview={MotbFloorplanTinySrc}
+          image={MotbFloorplanSrc}
         />
         <ProgressiveImage
           className="foreground wow fadeIn"
           altName="motb-floorplan-bg"
-          preview={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan_fore.png"}
-          image={process.env.PUBLIC_URL + "/static/media/image/motb_floorplan_fore@2x.png"}
+          preview={MotbFloorplanForeTinySrc}
+          image={MotbFloorplanForeSrc}
         />
       </div>
     </div>
@@ -86,29 +118,29 @@ function OnsiteGallery(props) {
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_gospel@2x.jpg"}
+              preview={MotbGridGospelTinySrc}
+              image={MotbGridGospelSrc}
             />
           </div>
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_map@2x.jpg"}
+              preview={MotbGridMapTinySrc}
+              image={MotbGridMapSrc}
             />
           </div>
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_ps@2x.jpg"}
+              preview={MotbGridPSTinySrc}
+              image={MotbGridPSSrc}
             />
           </div>
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_quiz@2x.jpg"}
+              preview={MotbGridQuizTinySrc}
+              image={MotbGridQuizSrc}
             />
           </div>
         </div>
@@ -120,15 +152,15 @@ function OnsiteGallery(props) {
         <div className="six columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitea@2x.jpg"}
+              preview={MotbGridOnsiteATinySrc}
+              image={MotbGridOnsiteASrc}
             />
         </div>
         <div className="six columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsiteb@2x.jpg"}
+              preview={MotbGridOnsiteBTinySrc}
+              image={MotbGridOnsiteBSrc}
             />
         </div>
         </div>
@@ -140,29 +172,29 @@ function OnsiteGallery(props) {
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_loud@2x.jpg"}
+              preview={MotbGridLoudTinySrc}
+              image={MotbGridLoudSrc}
             />
           </div>
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_work@2x.jpg"}
+              preview={MotbGridworkTinySrc}
+              image={MotbGridworkSrc}
             />
           </div>
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_name@2x.jpg"}
+              preview={MotbGridnameTinySrc}
+              image={MotbGridnameSrc}
             />
           </div>
           <div className="three columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_hr@2x.jpg"}
+              preview={MotbGridhrTinySrc}
+              image={MotbGridhrSrc}
             />
           </div>
         </div>
@@ -174,15 +206,15 @@ function OnsiteGallery(props) {
         <div className="six columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsitec@2x.jpg"}
+              preview={MotbGridOnsiteCTinySrc}
+              image={MotbGridOnsiteCSrc}
             />
         </div>
         <div className="six columns">
             <ProgressiveImage
               altName="motb-floorplan-bg"
-              preview={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited.jpg"}
-              image={process.env.PUBLIC_URL + "/static/media/image/motb-grid_onsited@2x.jpg"}
+              preview={MotbGridOnsiteDTinySrc}
+              image={MotbGridOnsiteDSrc}
             />
         </div>
         </div>
@@ -212,72 +244,73 @@ export default class Motb extends PureComponent {
       <div className="project-motb">
         <BackButton/>
         <ProjectBanner
-          imageSources={process.env.PUBLIC_URL + "/static/media/image/motb_project_banner"}
+          previewSource={MotbBannerTinySrc}
+          realSource={MotbBannerSrc}
           title="Museum of the Bible"
           description={"The museum, located in Washington, D.C, showcases fascinating artifacts and offers an immersive experience with the Bible and its ongoing impact on the world around us, with cutting-edge digital technology.<br/><br/> As the interaction designer & front-end developer of this project, I crafted 12 digital interactives from interaction / motion design, to live kiosk applications with node JS web stack (React JS / Angular JS / Webpack).<br/><br/> The museum is open to public since November, 2017."}
         />
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="highlight-section row first">
             <VideoCard
               yOffset="-320"
               videoSrc="/static/media/videos/gospel_short.mp4"
-              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              imageSrc={MotbVideoBgSrc}
               title="Interactive: Gospels and Spirituals"
               description="The interactive showcased soundtracks from 24 artists, who performed six different gospels that inspried by the Bible. Soundtracks are sampled, parsed and visualized into waves, as spiritual lyrics highlighting on the side."
             />
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
               videoSrc="/static/media/videos/bol.mp4"
-              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              imageSrc={MotbVideoBgSrc}
               title="Interactive: Bible Out Loud"
               description="The interactive recorded soundtracks that people read the Bible with minority languages from all over the world."
             />
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
               videoSrc="/static/media/videos/hmr.mp4"
-              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              imageSrc={MotbVideoBgSrc}
               title="Interactive: Human Right Series"
               description="A collection of six interactives that digitalized exhibit documents, videos & collections of how 10 historical legends fight for human rights & justice, eliminate slavery, with vivid media and rich interactions."
             />
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
               videoSrc="/static/media/videos/bom.mp4"
-              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              imageSrc={MotbVideoBgSrc}
               title="Interactive: Bible on the Map"
               description="The interactive digital map scrolls infinitely, showcased 200+ cities / towns / landmarks in U.S.A that are named after Bible references."
             />
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
               videoSrc="/static/media/videos/bn.mp4"
-              imageSrc={process.env.PUBLIC_URL + "/static/media/image/motb_highlight_gospel"}
+              imageSrc={MotbVideoBgSrc}
               title="Interactive: Biblical Names"
               description="The interactive showcased 1000+ names that are inspired / originated from Bible references, documented with the first appearance in Bible of each entry."
             />
           </div>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <Floorplan/>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <OnsiteGallery/>
         </LazyLoad>
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once offset={100}>
           <ComeAndVisit/>
           <Footer
             theme="dark"
