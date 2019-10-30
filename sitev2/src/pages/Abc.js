@@ -37,6 +37,9 @@ import AbcGalleryTinySrc from '../assets/image/abc-highlight-gallery.jpg';
 import AbcGallerySrc from '../assets/image/abc-highlight-gallery@2x.jpg';
 import AbcVidBackgroundSrc from '../assets/image/abc-highlight-review.jpg';
 
+import AbcVideoReviewSrc from '../assets/video/abc_highlight_review.mp4';
+import AbcVideoHomeTourSrc from '../assets/video/abc_highlight_tour.mp4';
+
 function AbcBanner(props) {
   return (
     <div className="abc-banner project-info row">
@@ -283,7 +286,7 @@ function AbcVideoCard(props) {
         muted
         draggable={false}>
         <source
-          src={process.env.PUBLIC_URL + props.videoSource}
+          src={props.videoSource}
           type="video/mp4">
         </source>
       </video>
@@ -313,7 +316,7 @@ function AbcHighlightsLeftDual(props) {
             </div>
             <div className="four columns">
               <AbcVideoCard
-                videoSource="/static/media/videos/abc_highlight_review.mp4"
+                videoSource={AbcVideoReviewSrc}
                 imageSource="/static/media/image/abc-highlight-review"
               />
               <h4>Review</h4>
@@ -333,7 +336,7 @@ function AbcHighlightsRightDual(props) {
           <div className=" row">
             <div className="four columns">
               <AbcVideoCard
-                videoSource="/static/media/videos/abc_highlight_tour.mp4"
+                videoSource={AbcVideoHomeTourSrc}
                 imageSource="/static/media/image/abc-highlight-review"
               />
               <h4>Home Tour</h4>

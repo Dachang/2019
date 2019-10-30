@@ -1,0 +1,137 @@
+.project-figmeasure {
+    background-color: #0F0C2B;
+}
+
+.fig-features {
+  padding: 32px 0 200px 0;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.fig-features.right { 
+  padding: 32px 0 360px 0;
+}
+
+.fig-features.font { 
+  padding: 120px 0 200px 0;
+}
+
+.fig-features.font .six.columns { 
+  width: 50%;
+}
+
+.fig-features.font .placeholder { 
+  width: 502px;
+  height: 502px;
+}
+
+.fig-features img {
+  width: 502px;
+  position: absolute;
+}
+
+.fig-features p.subtitle{
+  font-family: 'SF Light';
+  font-style: normal;
+  font-weight: 00;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  color: #1ABDFF;
+  margin-bottom: 8px;
+}
+
+.fig-features h4.title{
+  font-family: 'SF Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.fig-features p.paragraph {
+  font-family: 'SF Light';
+  font-size: 32px;
+  line-height: 48px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.fig-banner.project-info h1 {
+  font-family: 'SF Display';
+  font-size: 108px;
+  margin: 0 0 0 0;
+  line-height: 1.2;
+  color: white;
+}
+
+.fig-banner.project-info p {
+  font-family: 'SF Light';
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+  margin-top: 64px;
+}
+
+.fig-banner.project-info {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.fig-banner.project-info .five.columns {
+    margin-top: 320px;
+}
+
+.sizing-graph-wrapper {
+  width: 100%;
+}
+
+.fig-get .row {
+  display: flex;
+}
+
+.fig-get h1 {
+  font-family: 'SF Display';
+  font-size: 108px;
+  margin: 0 0 0 0;
+  line-height: 1.2;
+  color: white;
+}
+
+.fig-get p {
+  font-family: 'SF Light';
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+  margin-top: 40px;
+}
+
+.fig-get img {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.fig-get a {
+  font-family: 'SF Light';
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFF500;
+  text-decoration: none;
+  pointer-events: all;
+  margin-top: 56px;
+}
+
+.fig-video-card {
+  overflow: hidden;
+  width: 80%;
+  margin: 160px 0 0 200px;
+}

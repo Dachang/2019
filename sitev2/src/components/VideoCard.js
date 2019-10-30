@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import TrackVisibility from 'react-on-screen';
 import '../styles/VideoCard.css';
 
 function PlayButton(props) {
@@ -59,7 +58,7 @@ class VideoBackground extends PureComponent {
           muted
           draggable={false}>
           <source
-            src={process.env.PUBLIC_URL + this.props.videoSrc}
+            src={this.props.videoSrc}
             type="video/mp4">
           </source>
         </video>

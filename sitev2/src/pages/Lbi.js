@@ -46,7 +46,7 @@ function LbiIntro(props) {
           <div className="row lbi-lbi-intro">
             <div className="two columns"></div>
             <div className="eight columns">
-              <h1>Intro3</h1>
+              <h1>Intro</h1>
               <p>”1938 Project: Posts from the Past“ is a captivating, social, web-based and physical exhibition program that presents archive documents – a handwritten letter, diary entry, photo or newspaper article – from German-speaking Jews every day throughout the year 2018, just as they experienced the twelve months before the‘ Kristallnacht‘ and the beginning of the Holocaust.</p>
               <p>As the front-end developer of this project, I built the web application(Vanilla JS/Wordpress), as well as adapting it to interactive kiosks for the exhibition.</p>
             </div>

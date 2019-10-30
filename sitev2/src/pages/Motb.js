@@ -41,6 +41,12 @@ import MotbBannerTinySrc from '../assets/image/motb_project_banner_small.jpg';
 import MotbBannerSrc from '../assets/image/motb_project_banner.jpg';
 import MotbVideoBgSrc from '../assets/image/motb_highlight_gospel@2x.png';
 
+import MotbVideoGospelSrc from '../assets/video/gospel_short.mp4';
+import MotbVideoBolSrc from '../assets/video/bol.mp4';
+import MotbVideoBnSrc from '../assets/video/bn.mp4';
+import MotbVideoBomSrc from '../assets/video/bom.mp4';
+import MotbVideoHmrSrc from '../assets/video/hmr.mp4';
+
 function Floorplan(props) {
   return (
     <div className="motb-floorplan wow fadeIn">
@@ -253,7 +259,7 @@ export default class Motb extends PureComponent {
           <div className="highlight-section row first">
             <VideoCard
               yOffset="-320"
-              videoSrc="/static/media/videos/gospel_short.mp4"
+              videoSrc={MotbVideoGospelSrc}
               imageSrc={MotbVideoBgSrc}
               title="Interactive: Gospels and Spirituals"
               description="The interactive showcased soundtracks from 24 artists, who performed six different gospels that inspried by the Bible. Soundtracks are sampled, parsed and visualized into waves, as spiritual lyrics highlighting on the side."
@@ -264,7 +270,7 @@ export default class Motb extends PureComponent {
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
-              videoSrc="/static/media/videos/bol.mp4"
+              videoSrc={MotbVideoBolSrc}
               imageSrc={MotbVideoBgSrc}
               title="Interactive: Bible Out Loud"
               description="The interactive recorded soundtracks that people read the Bible with minority languages from all over the world."
@@ -275,7 +281,7 @@ export default class Motb extends PureComponent {
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
-              videoSrc="/static/media/videos/hmr.mp4"
+              videoSrc={MotbVideoHmrSrc}
               imageSrc={MotbVideoBgSrc}
               title="Interactive: Human Right Series"
               description="A collection of six interactives that digitalized exhibit documents, videos & collections of how 10 historical legends fight for human rights & justice, eliminate slavery, with vivid media and rich interactions."
@@ -286,7 +292,7 @@ export default class Motb extends PureComponent {
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
-              videoSrc="/static/media/videos/bom.mp4"
+              videoSrc={MotbVideoBomSrc}
               imageSrc={MotbVideoBgSrc}
               title="Interactive: Bible on the Map"
               description="The interactive digital map scrolls infinitely, showcased 200+ cities / towns / landmarks in U.S.A that are named after Bible references."
@@ -297,7 +303,7 @@ export default class Motb extends PureComponent {
           <div className="highlight-section row">
             <VideoCard
               yOffset="-320"
-              videoSrc="/static/media/videos/bn.mp4"
+              videoSrc={MotbVideoBnSrc}
               imageSrc={MotbVideoBgSrc}
               title="Interactive: Biblical Names"
               description="The interactive showcased 1000+ names that are inspired / originated from Bible references, documented with the first appearance in Bible of each entry."
