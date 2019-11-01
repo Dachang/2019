@@ -1,0 +1,206 @@
+.project-cdi-mobile {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.cdi-banner {
+    padding: 180px 0 100px 0;
+}
+
+.cdi-banner .row {
+    display: flex;
+}
+
+.cdi-banner img {
+    width: 100%;
+}
+
+.cdi-banner h1 {
+    font-family: 'SF Display';
+    font-size: 108px;
+    margin: 0 0 0 0;
+    line-height: 1.2;
+    color: #000000;
+    text-align: center;
+}
+
+.cdi-banner p {
+    font-family: 'SF Light';
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+    margin-top: 64px;
+}
+
+.cdi-banner a {
+    text-decoration: none;
+    color: #E61E4D;
+    pointer-events: all;
+}
+
+.cdi-banner .four.columns {
+    width: 33.33%;
+}
+
+.cdi-banner .three.columns, 
+.cdi-soul-system .three.columns, 
+.cdi-poster .three.columns, 
+.cdi-mobile .three.columns,
+.cdi-digital-display .three.columns,
+.cdi-footer .three.columns {
+    width: 25%;
+}
+
+.cdi-poster {
+    display: flex;
+    padding-bottom: 120px;
+}
+
+.cdi-poster img {
+    width: 100%;
+}
+
+.cdi-poster p {
+    font-family: 'SF Light';
+    font-size: 24px;
+    line-height: 40px;
+    color: #999999;
+    text-align: center;
+}
+
+.cdi-soul-system {
+    display: flex;
+    padding: 120px 0 120px 0;
+    background: linear-gradient(180deg, #61E873 0%, #219A87 100%);
+}
+
+.cdi-soul-system h1 {
+    font-family: 'SF Display';
+    font-size: 108px;
+    margin: 0 0 0 0;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+}
+
+.cdi-soul-system p {
+    font-family: 'SF Light';
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFF;
+    margin-top: 64px;
+}
+
+.cdi-soul-system img {
+    width: 50%;
+    min-width: 100px;
+    margin-left: 25%;
+}
+
+.cdi-soul-system .modules {
+    margin-top: 80px;
+}
+
+.cdi-soul-system .modules.second {
+    margin-top: 24px;
+}
+
+.cdi-soul-system .three.columns p {
+    font-family: 'SF Light';
+    font-size: 24px;
+    line-height: 40px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 0px;
+    text-align: center;
+}
+
+.cdi-mobile {
+    padding: 120px 0 120px 0;
+}
+
+.cdi-mobile .row {
+    display: flex;
+}
+
+.cdi-mobile h1, .cdi-footer h1 {
+    font-family: 'SF Display';
+    font-size: 108px;
+    margin: 0 0 0 0;
+    line-height: 1.2;
+    color: #000000;
+    text-align: center;
+}
+
+.cdi-mobile p, .cdi-footer p {
+    font-family: 'SF Light';
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+    margin-top: 64px;
+}
+
+.cdi-mobile .row.poster img {
+    width: 100%;
+    margin: 80px 0 0 320px;
+}
+
+.cdi-mobile .row.screens {
+    display: flex;
+    margin-top: 80px;
+}
+
+.cdi-mobile .row.screens img {
+    width: 100%;
+}
+
+.cdi-mobile .row.screens p {
+    font-family: 'SF Light';
+    font-size: 24px;
+    line-height: 40px;
+    color: #999999;
+    margin-top: 0px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.cdi-digital-display {
+    background-color: black;
+    padding: 120px 0 120px 0;
+}
+
+.cdi-digital-display .row {
+    display: flex;
+}
+
+.cdi-digital-display h1 {
+    font-family: 'SF Display';
+    font-size: 108px;
+    margin: 0 0 0 0;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cdi-digital-display img {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.cdi-digital-display p {
+    font-family: 'SF Light';
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFF;
+    margin-top: 64px;
+}
+
+.cdi-footer {
+    display: flex;
+    padding: 120px 0 120px 0;
+}
+
+.cdi-footer a {
+    text-decoration: none;
+    color: #E61E4D;
+    pointer-events: all;
+}

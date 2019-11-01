@@ -92,8 +92,8 @@ class Homepage extends PureComponent {
                   <Workcard
                     previewSource={CdiWorkcardTinySrc}
                     trueSource={CdiWorkcardSrc}
-                    title="CDI Mobile"
-                    pagelink="/cdi-mobile"
+                    title="CDI Soul"
+                    pagelink="/cdi-soul"
                     time="2016.6 - 2016.12"
                     description="Control your living space at a flash."
                   />

@@ -41,6 +41,6 @@ export default class ProgressiveImage extends PureComponent {
     render() {
       const { currentImage, loading } = this.state
       const { alt } = this.props.altName
-      return <img style={this.style(loading)} src={currentImage} alt={alt} className={this.props.className}/>
+      return <img style={this.style(loading)} src={currentImage} alt={alt} className={this.props.className} data-wow-delay={this.props.dataWowDelay}/>
     }
   }

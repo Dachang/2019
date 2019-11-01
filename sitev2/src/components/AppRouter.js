@@ -21,7 +21,7 @@ export default class AppRouter extends PureComponent {
               <Route path="/" exact component={AsyncHome} />
               <Route path="/motb/" component={AsynbMotb} />
               <Route path="/lbi/" component={AsyncLbi} />
-              <Route path="/cdi-mobile/" component={AsyncCdi} />
+              <Route path="/cdi-soul/" component={AsyncCdi} />
               <Route path="/airbnbchina/" component={AsyncAbc} />
               <Route path="/figmeasure/" component={AsyncFig} />
             </div>

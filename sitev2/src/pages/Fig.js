@@ -21,7 +21,6 @@ import FigFeatureMultiAfterTinySrc from '../assets/image/fig-feature-multi-after
 import FigFeatureMultiAfterSrc from '../assets/image/fig-feature-multi-after@2x.png';
 import FigGetTinySrc from '../assets/image/fig-get.png';
 import FigGetSrc from '../assets/image/fig-get@2x.png';
-import FigVidBackgroundSrc from '../assets/image/fig-vid-bg.png';
 import FigVidSrc from '../assets/video/figmeasure-rec.mp4';
 
 function FigVideoCard(props) {
@@ -128,7 +127,7 @@ function FigFeaturesSpacing(props) {
             />
             <ProgressiveImage
               className="fig-feature-spacing-bottom wow fadeIn"
-              data-wow-delay="3s"
+              dataWowDelay="0.5s"
               altName="fig-feature-spacing-bottom"
               preview={FigFeatureSpacingAfterTinySrc}
               image={FigFeatureSpacingAfterSrc}
@@ -157,7 +156,7 @@ function FigFeaturesFont(props) {
               />
               <ProgressiveImage
                 className="fig-feature-spacing-bottom wow fadeIn"
-                data-wow-delay="3s"
+                dataWowDelay="0.5s"
                 altName="fig-feature-spacing-bottom"
                 preview={FigFeatureFontAfterTinySrc}
                 image={FigFeatureFontAfterSrc}
@@ -196,7 +195,7 @@ function FigFeaturesMulti(props) {
             />
             <ProgressiveImage
               className="fig-feature-spacing-bottom wow fadeIn"
-              data-wow-delay="3s"
+              dataWowDelay="0.5s"
               altName="fig-feature-spacing-bottom"
               preview={FigFeatureMultiAfterTinySrc}
               image={FigFeatureMultiAfterSrc}
@@ -215,18 +214,18 @@ function FigGet(props) {
       <div className="row">
         <div className="one column"></div>
         <div className="ten columns">
-          <h1>Get it now.</h1>
-          <p>Currently <a href="https://www.figma.com/c/plugin/743719183188104088/Figmeasure">Figmeasure</a> is published under Airbnb organization, <br/>migration work for public access are undergoing.</p>
-          <a href="https://github.com/Dachang/Figmeasure">Source code</a>
+          <h1 className="wow fadeIn">Get it now.</h1>
+          <p className="wow fadeIn">Currently <a href="https://www.figma.com/c/plugin/743719183188104088/Figmeasure" target="_blank">Figmeasure</a> is published under Airbnb organization, <br/>migration work for public access are undergoing.</p>
+          <a className="wow fadeIn" href="https://github.com/Dachang/Figmeasure" target="_blank">Source code</a>
         </div>
         <div className="one column"></div>
       </div>
       <ProgressiveImage
-          className="fig-feature-spacing-bottom"
-          altName="fig-feature-spacing-bottom"
-          preview={FigGetTinySrc}
-          image={FigGetSrc}
-        />
+        className="fig-feature-spacing-bottom wow fadeIn"
+        altName="fig-feature-spacing-bottom"
+        preview={FigGetTinySrc}
+        image={FigGetSrc}
+      />
     </div>
   )
 }
