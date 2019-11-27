@@ -22,13 +22,13 @@
   display: flex;
   position: absolute;
   z-index: 1;
-  top: 168px;
+  top: calc(64px + 6.12vw);
 }
 
 .project-banner .project-info h1 {
   font-family: 'SF Display', "HelveticaNeue";
   font-weight: 900;
-  font-size: 108px;
+  font-size: calc(32px + 4.5vw);
   margin: 0 0 0 0;
   color: white;
   line-height: 1.2;
@@ -37,8 +37,8 @@
 .project-banner .project-info p {
   font-family: 'SF Light', "HelveticaNeue";
   font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: calc(16px + 0.9vw);
+  line-height: 1.5;
   color: white;
   margin-top: 30px;
 }

@@ -17,7 +17,7 @@
 
 .cdi-banner h1 {
     font-family: 'SF Display';
-    font-size: 108px;
+    font-size: calc(32px + 4.5vw);
     margin: 0 0 0 0;
     line-height: 1.2;
     color: #000000;
@@ -26,8 +26,8 @@
 
 .cdi-banner p {
     font-family: 'SF Light';
-    font-size: 32px;
-    line-height: 48px;
+    font-size: calc(16px + 0.9vw);
+    line-height: 1.5;
     color: #000000;
     margin-top: 64px;
 }
@@ -62,8 +62,8 @@
 
 .cdi-poster p {
     font-family: 'SF Light';
-    font-size: 24px;
-    line-height: 40px;
+    font-size: calc(12px + 0.7vw);
+    line-height: 1.6;
     color: #999999;
     text-align: center;
 }
@@ -76,7 +76,7 @@
 
 .cdi-soul-system h1 {
     font-family: 'SF Display';
-    font-size: 108px;
+    font-size: calc(32px + 4.5vw);
     margin: 0 0 0 0;
     line-height: 1.2;
     color: #fff;
@@ -85,8 +85,8 @@
 
 .cdi-soul-system p {
     font-family: 'SF Light';
-    font-size: 32px;
-    line-height: 48px;
+    font-size: calc(16px + 0.9vw);
+    line-height: 1.5;
     color: #FFF;
     margin-top: 64px;
 }
@@ -107,8 +107,8 @@
 
 .cdi-soul-system .three.columns p {
     font-family: 'SF Light';
-    font-size: 24px;
-    line-height: 40px;
+    font-size: calc(12px + 0.7vw);
+    line-height: 1.6;
     color: rgba(255,255,255,0.75);
     margin-top: 0px;
     text-align: center;
@@ -124,7 +124,7 @@
 
 .cdi-mobile h1, .cdi-footer h1 {
     font-family: 'SF Display';
-    font-size: 108px;
+    font-size: calc(32px + 4.5vw);
     margin: 0 0 0 0;
     line-height: 1.2;
     color: #000000;
@@ -133,8 +133,8 @@
 
 .cdi-mobile p, .cdi-footer p {
     font-family: 'SF Light';
-    font-size: 32px;
-    line-height: 48px;
+    font-size: calc(16px + 0.9vw);
+    line-height: 1.5;
     color: #000000;
     margin-top: 64px;
 }
@@ -155,8 +155,8 @@
 
 .cdi-mobile .row.screens p {
     font-family: 'SF Light';
-    font-size: 24px;
-    line-height: 40px;
+    font-size: calc(12px + 0.7vw);
+    line-height: 1.6;
     color: #999999;
     margin-top: 0px;
     text-align: center;
@@ -174,7 +174,7 @@
 
 .cdi-digital-display h1 {
     font-family: 'SF Display';
-    font-size: 108px;
+    font-size: calc(32px + 4.5vw);
     margin: 0 0 0 0;
     line-height: 1.2;
     color: #FFFFFF;
@@ -188,8 +188,8 @@
 
 .cdi-digital-display p {
     font-family: 'SF Light';
-    font-size: 32px;
-    line-height: 48px;
+    font-size: calc(16px + 0.9vw);
+    line-height: 1.5;
     color: #FFF;
     margin-top: 64px;
 }

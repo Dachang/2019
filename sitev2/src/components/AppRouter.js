@@ -9,6 +9,7 @@ const AsyncAbc = asyncComponent(() => import("../pages/Abc.js"));
 const AsyncLbi = asyncComponent(() => import("../pages/Lbi.js"));
 const AsyncFig = asyncComponent(() => import("../pages/Fig.js"));
 const AsyncCdi = asyncComponent(() => import("../pages/Cdi.js"));
+const AsyncEarlier = asyncComponent(() => import("../pages/Earlier.js"));
 
 export default class AppRouter extends PureComponent {
 
@@ -24,6 +25,7 @@ export default class AppRouter extends PureComponent {
               <Route path="/cdi-soul/" component={AsyncCdi} />
               <Route path="/airbnbchina/" component={AsyncAbc} />
               <Route path="/figmeasure/" component={AsyncFig} />
+              <Route path="/earlier/"  component={AsyncEarlier} />
             </div>
           </Switch>
         </ScrollToTop>

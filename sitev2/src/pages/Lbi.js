@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import ProgressiveImage from '../components/ProgressiveImage';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
+import {isMobile} from 'react-device-detect';
 
 import '../styles/Lbi.css';
 import '../App.css';
@@ -22,7 +23,7 @@ import LbiOnsiteSrc from '../assets/image/lbi_onsite@2x.jpg';
 function LbiBanner(props) {
   return (
     <Controller>
-      <Scene triggerElement="#trigger" duration={600} offset={-320}>
+      <Scene triggerElement="#trigger" duration={600} offset={-320} enabled={!isMobile}>
         <Tween from={{ opacity: 1 }} to={{ opacity: 0 }} >
           <div className="lbi-lbi-banner">
             <ProgressiveImage

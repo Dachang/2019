@@ -103,7 +103,7 @@ class Homepage extends PureComponent {
                     previewSource={EarWorkcardTinySrc}
                     trueSource={EarWorkcardSrc}
                     title="Earlier Work"
-                    to="/cdi-mobile"
+                    pagelink="/earlier"
                     time="2013 - 2016"
                     description="Collections from the past."
                   />

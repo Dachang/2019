@@ -14,7 +14,7 @@
 
 .work-card h4 {
   font-family: 'SF Display';
-  font-size: 108px;
+  font-size: calc(32px + 4.5vw);
   margin: 0 0 0 0;
   color: white;
   line-height: 1.2;
@@ -34,7 +34,7 @@
   display: flex;
   width: 100%;
   position: absolute;
-  bottom: 40px;
+  bottom: calc(12px + 1.65vw);
   /* transform: translateY(0px);
   -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); */
@@ -58,26 +58,26 @@
 }
 
 .first-row .card-info {
-  bottom: 120px;
+  bottom: calc(40px + 4.7vw);
 }
 
 .second-row .card-info {
-  margin-left: 880px;
-  bottom: 40px;
+  margin-left: calc(320px + 32.9vw);
+  bottom: calc(12px + 1.65vw);
 }
 
 .work-card p {
   font-family: 'SF Light';
-  font-size: 32px;
-  line-height: 48px;
+  font-size: calc(16px + 0.9vw);
+  line-height: 1.5;
   color: white;
   margin: 0 0 0 0;
 }
 
 .work-card p.time-label {
   font-family: 'SF Text';
-  font-size: 24px;
-  line-height: 30px;
+  font-size: calc(12px + 0.7vw);
+  line-height: 1.25;
   color: rgba(255,255,255,0.5);
   margin: 0 0 40px 0;
 }
@@ -87,17 +87,17 @@
 }
 
 .first-row .work-card p {
-  margin-right: 640px;
+  margin-right: calc(160px + 28.2vw);
 }
 
 .second-row .work-card p {
-  margin-right: 540px;
+  margin-right: calc(120px + 24.7vw);
 }
 
 .work-card p.link-label {
   font-family: 'SF Light';
-  font-size: 32px;
-  line-height: 48px;
+  font-size: calc(16px + 0.9vw);
+  line-height: 1.5;
   margin-top: 16px;
   color: #FFF500;
 }
@@ -127,4 +127,10 @@
 
 .third-row.last .eight.columns {
   width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .work-card .card-info p {
+    display: none;
+  }
 }

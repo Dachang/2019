@@ -23,7 +23,7 @@ export default class Workcard extends PureComponent {
               <p>{this.props.description}</p>
               <p className="link-label">Read more</p>
             </div>
-            <div className="three columns"></div>
+            {/* <div className="three columns"></div> */}
           </div>
         </Link>
       </div>

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
+import {isMobile} from 'react-device-detect';
 import '../styles/Marquee.css';
 
 export default class Marquee extends PureComponent {
@@ -11,7 +12,7 @@ export default class Marquee extends PureComponent {
         <div className="one column"></div>
         <div className="main-content ten columns">
           <Controller>
-              <Scene triggerElement="#index-banner-trigger" duration={600} offset={-320}>
+              <Scene triggerElement="#index-banner-trigger" duration={600} offset={-320} enabled={!isMobile}>
                 <Tween from={{ opacity: 1 }} to={{ opacity: 0 }} >
                   <div className="row">
                     <div className="eleven columns wow fadeIn">

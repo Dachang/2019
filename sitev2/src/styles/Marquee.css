@@ -1,7 +1,7 @@
 .marquee {
   display: flex;
   width: 100%;
-  margin-top: 12rem;
+  margin-top: calc(32px + 4.5vw);
 }
 
 .marquee .row {
@@ -21,19 +21,71 @@
   font-size: calc(16px + 0.9vw);
   line-height: 1.5;
   color: white;
-  margin-top: 7.2rem;
-}
-
-@media screen and (min-width: 1200px) {
-  .marquee h1 {
-     font-size: 6.4vw;
-  }
-  .marquee p {
-    font-size: 1.9vw;
-  }
+  margin-top: calc(32px + 2.3vw);
 }
 
 #index-banner-trigger {
   position: relative;
   height: 1px;
+}
+
+/* Media Queries */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .marquee .one.column {
+    width: 0;
+  }
+
+  .marquee .ten.columns {
+    margin: 0 10% 0 10%;
+  }
 }

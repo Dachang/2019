@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
+import resumeSrc from '../assets/file/dachang_liu_designer_airbnb.pdf';
 
 export default class Footer extends PureComponent {
 
@@ -28,7 +29,7 @@ export default class Footer extends PureComponent {
                             </a>
                         </div>
                         <div className="four columns">
-                            <a href={process.env.PUBLIC_URL + "/static/media/files/dachang_liu_designer_airbnb.pdf"} target="_blank"  className="footer-icon-wrapper">
+                            <a href={resumeSrc} target="_blank"  className="footer-icon-wrapper">
                                 <h4>RESUME</h4>
                             </a>
                         </div>

@@ -1,0 +1,55 @@
+.project-earlier {
+    background-color: #000;
+}
+
+.project-earlier .row {
+    display: flex;
+}
+
+.project-earlier h1 {
+    font-family: 'SF Display';
+    font-size: calc(32px + 4.5vw);
+    margin-top: calc(24px + 3.3vw);
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+}
+
+.project-earlier .row.title p {
+    font-family: 'SF Light';
+    font-size: calc(16px + 0.9vw);
+    line-height: 1.5;
+    color: white;
+    margin: 1rem 0 4rem 0;
+    text-align: center;
+}
+
+.project-earlier .row.title a {
+    color: #FFF500;
+    text-decoration: none;
+    pointer-events: all;
+}
+
+.project-earlier .row.title .three.columns {
+    width: 25%;
+}
+
+.project-earlier .row.gallery .three.columns {
+    width: 25%;
+    overflow: hidden;
+}
+
+.project-earlier .row.gallery img {
+    width: 100%;
+    border: solid 2px black;
+}
+
+.project-earlier .row.gallery .fill {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.project-earlier .row.gallery .row.second {
+    margin-top: -20px;
+}
